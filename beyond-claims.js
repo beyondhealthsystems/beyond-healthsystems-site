@@ -1,53 +1,43 @@
 export default function BeyondClaims() {
   return (
-    <main
-      style={{
-        padding: "80px 60px",
-        fontFamily: "system-ui",
-        maxWidth: 1100,
-        margin: "0 auto",
-        lineHeight: 1.6
-      }}
-    >
+    <main style={{ padding: "80px", fontFamily: "system-ui", maxWidth: 1100 }}>
       <h1>Beyond-Claims</h1>
 
-      <p style={{ fontSize: 18, maxWidth: 800 }}>
-        Autonomous recovery for claims that appear “paid” — but are not correct.
+      <p>
+        Beyond-Claims is the autonomous recovery engine within the Beyond
+        platform. It focuses on identifying and correcting underpayments,
+        partial payments, and misapplied contract logic — even after claims post
+        as “paid.”
+      </p>
+
+      <h2>The Problem</h2>
+
+      <p>
+        Once a claim posts with a non-zero payment, most systems close the
+        account. Manual recovery is economically irrational at scale, leaving
+        meaningful revenue permanently uncollected.
       </p>
 
       <h2>What Beyond-Claims Does</h2>
-      <p>
-        Beyond-Claims is a deterministic recovery platform that identifies,
-        corrects, and resubmits underpaid and misadjudicated claims that
-        traditional RCM workflows ignore once a claim posts as paid.
-      </p>
 
       <ul>
-        <li>Detects silent underpayments and contract misapplication</li>
-        <li>Separates denials, partials, and short-pays at the line level</li>
-        <li>Generates corrected, submission-ready claims automatically</li>
-        <li>Produces a complete, auditable correction trail</li>
+        <li>Identifies recoverable underpayments</li>
+        <li>Determines the correct payable amount</li>
+        <li>Generates corrected submissions when appropriate</li>
+        <li>Operates without manual intervention</li>
       </ul>
 
-      <h2>Why This Matters</h2>
+      <h2>Why It Works</h2>
+
       <p>
-        Most recovery systems only work zero-pay denials. Once money posts,
-        billing systems close the account — even when the payment is wrong.
-      </p>
-      <p>
-        Beyond-Claims changes the economics by making post-payment correction
-        automated, auditable, and financially rational.
+        Beyond-Claims changes the economics of recovery. By automating detection
+        and correction, recovery becomes feasible at scale — including partials
+        that were previously abandoned.
       </p>
 
-      <h2>Typical Impact</h2>
       <p>
-        Hospitals and large provider groups typically recover an additional
-        <strong> 6–10% of total billed revenue</strong> using Beyond-Claims,
-        without increasing staff or disrupting existing workflows.
-      </p>
-
-      <p style={{ marginTop: 40, fontStyle: "italic" }}>
-        Detailed workflow, phases, and examples coming next.
+        The result is measurable uplift in collected revenue without adding
+        operational burden.
       </p>
     </main>
   );
