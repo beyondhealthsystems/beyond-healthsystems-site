@@ -1,64 +1,71 @@
 export default function Platform() {
   return (
-    <main
-      style={{
-        padding: "80px 60px",
-        fontFamily: "system-ui",
-        maxWidth: 1200,
-        margin: "0 auto",
-        lineHeight: 1.6
-      }}
-    >
-      <h1>The Platform</h1>
+    <main style={{ padding: "80px", fontFamily: "system-ui", maxWidth: 1100 }}>
+      <h1>The Beyond Platform</h1>
 
-      <p style={{ fontSize: 18, maxWidth: 900 }}>
+      <p>
         Beyond Health Systems is a system-level healthcare intelligence platform
-        built to verify outcomes, expose financial inaccuracies, and enforce
-        correctness — after claims are marked “paid.”
+        built for auditability, financial accuracy, and accountability.
       </p>
 
-      <h2>The gap in today’s systems</h2>
-      <p style={{ maxWidth: 900 }}>
-        Modern healthcare infrastructure is optimized for throughput: claims are
-        submitted, adjudicated, paid, and closed. Once payment posts, systems
-        assume correctness.
-      </p>
-      <p style={{ maxWidth: 900 }}>
-        That assumption hides partial enforcement, contract misapplication,
-        payer drift, and silent write-offs that are never disputed or recovered.
+      <p>
+        Most healthcare infrastructure was designed to process transactions —
+        not to verify outcomes. Once a claim posts as “paid,” systems assume the
+        result is correct. In reality, underpayments, partial enforcement, and
+        contract drift often remain invisible and unresolved.
       </p>
 
-      <h2>A different layer of intelligence</h2>
-      <p style={{ maxWidth: 900 }}>
-        Beyond Health Systems operates independently of billing and RCM
-        workflows. It does not replace existing systems or interfere with
-        operations.
-      </p>
-      <p style={{ maxWidth: 900 }}>
-        Instead, it introduces an audit-first verification layer that evaluates
-        what was billed, what was adjudicated, what was paid, and what should
-        have happened.
+      <h2>What Beyond Does</h2>
+
+      <p>
+        Beyond operates above traditional billing, clearinghouse, and RCM
+        workflows. It evaluates what happened versus what should have happened —
+        across claims, payments, and enforcement logic.
       </p>
 
-      <h2>How the platform is used</h2>
-      <ul style={{ maxWidth: 900 }}>
-        <li>Audit paid claims for correctness, not just denial status</li>
-        <li>Identify recoverable underpayments and partials</li>
-        <li>Produce fully auditable correction trails</li>
-        <li>Support executive, compliance, and financial oversight</li>
+      <ul>
+        <li>Audits paid claims, not just denials</li>
+        <li>Detects silent underpayments and partial enforcement</li>
+        <li>Surfaces systemic patterns, not isolated errors</li>
+        <li>Creates a verifiable record of financial truth</li>
       </ul>
 
-      <h2>Delivered through focused systems</h2>
-      <p style={{ maxWidth: 900 }}>
-        Platform capabilities are delivered through purpose-built systems,
-        including <strong>Beyond-Claims</strong> for autonomous recovery and
-        <strong> Beyond-Truth</strong> for audit and financial intelligence.
+      <h2>How It’s Different</h2>
+
+      <p>
+        Beyond is not a workflow tool, rules engine, or probabilistic AI. It is a
+        deterministic system designed to produce auditable, repeatable results.
       </p>
 
-      <p style={{ marginTop: 40, fontStyle: "italic" }}>
-        Technical architecture and phase detail available in the Technical
-        Overview.
+      <ul>
+        <li>No black-box decisions</li>
+        <li>No model hallucinations</li>
+        <li>No dependency on manual follow-up</li>
+        <li>Every outcome is explainable and reviewable</li>
+      </ul>
+
+      <h2>System-Level Intelligence</h2>
+
+      <p>
+        Beyond reveals issues that dashboards, denial rates, and days-in-AR
+        metrics cannot show — because those tools only measure surface symptoms.
       </p>
+
+      <p>
+        The platform exposes enforcement gaps, payer drift, and recovery
+        opportunities that accumulate quietly over time and are rarely pursued
+        due to cost and complexity.
+      </p>
+
+      <h2>Who It’s Built For</h2>
+
+      <ul>
+        <li>Hospitals and health systems</li>
+        <li>Large provider groups</li>
+        <li>RCM organizations</li>
+        <li>Consulting and advisory firms</li>
+        <li>Payers seeking validation and reconciliation</li>
+      </ul>
     </main>
   );
 }
