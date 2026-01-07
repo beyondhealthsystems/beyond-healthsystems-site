@@ -1,25 +1,32 @@
+// /pages/contact.js
+
 export default function Contact() {
   return (
-    <main style={{ padding: "60px", fontFamily: "system-ui", maxWidth: 900 }}>
+    <main style={{ padding: "80px", fontFamily: "system-ui", maxWidth: 900 }}>
       <h1>Contact</h1>
 
       <p>
         Beyond Health Systems works directly with hospitals, health systems,
-        payers, and advisory partners.
+        provider groups, RCM organizations, and advisory partners.
       </p>
 
       <p>
-        If you are evaluating auditability, payment accuracy, or system-level
-        financial truth, we’re happy to start the conversation.
+        Conversations are exploratory, confidential, and focused on accuracy,
+        auditability, and measurable financial outcomes.
+      </p>
+
+      <h2>Get in Touch</h2>
+
+      <p>
+        Email:{" "}
+        <a href="mailto:steven@beyond-ai.com">
+          steven@beyond-ai.com
+        </a>
       </p>
 
       <p>
-        <strong>Email:</strong>{" "}
-        <a href="mailto:steven@beyond-ai.com">steven@beyond-ai.com</a>
-      </p>
-
-      <p>
-        Initial conversations are exploratory and confidential.
+        We typically engage with executive leadership, finance, compliance,
+        and audit stakeholders.
       </p>
     </main>
   );
