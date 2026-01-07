@@ -1,41 +1,63 @@
 export default function Platform() {
   return (
-    <main style={{ padding: "4rem", fontFamily: "system-ui", maxWidth: 1000 }}>
-      <h1 style={{ fontSize: 40 }}>The Platform</h1>
+    <main
+      style={{
+        padding: "80px 60px",
+        fontFamily: "system-ui",
+        maxWidth: 1200,
+        margin: "0 auto",
+        lineHeight: 1.6
+      }}
+    >
+      <h1>The Platform</h1>
 
-      <p style={{ fontSize: 18, lineHeight: 1.7, marginTop: 16 }}>
+      <p style={{ fontSize: 18, maxWidth: 900 }}>
         Beyond Health Systems is a system-level healthcare intelligence platform
-        built to expose financial truth after claims are marked “paid.”
+        built to verify outcomes, expose financial inaccuracies, and enforce
+        correctness — after claims are marked “paid.”
       </p>
 
-      <p style={{ fontSize: 18, lineHeight: 1.7 }}>
-        Traditional revenue cycle systems stop auditing once a payment posts.
-        We do not.
+      <h2>The gap in today’s systems</h2>
+      <p style={{ maxWidth: 900 }}>
+        Modern healthcare infrastructure is optimized for throughput: claims are
+        submitted, adjudicated, paid, and closed. Once payment posts, systems
+        assume correctness.
+      </p>
+      <p style={{ maxWidth: 900 }}>
+        That assumption hides partial enforcement, contract misapplication,
+        payer drift, and silent write-offs that are never disputed or recovered.
       </p>
 
-      <hr style={{ margin: "32px 0" }} />
+      <h2>A different layer of intelligence</h2>
+      <p style={{ maxWidth: 900 }}>
+        Beyond Health Systems operates independently of billing and RCM
+        workflows. It does not replace existing systems or interfere with
+        operations.
+      </p>
+      <p style={{ maxWidth: 900 }}>
+        Instead, it introduces an audit-first verification layer that evaluates
+        what was billed, what was adjudicated, what was paid, and what should
+        have happened.
+      </p>
 
-      <h2>What makes this different</h2>
-      <ul style={{ fontSize: 16, lineHeight: 1.8 }}>
-        <li>Non-interfering auditing layer — no disruption to billing workflows</li>
-        <li>Deterministic logic, not probabilistic guesswork</li>
-        <li>Line-level financial enforcement validation</li>
-        <li>Fully auditable outputs (CSV, JSON, FHIR)</li>
+      <h2>How the platform is used</h2>
+      <ul style={{ maxWidth: 900 }}>
+        <li>Audit paid claims for correctness, not just denial status</li>
+        <li>Identify recoverable underpayments and partials</li>
+        <li>Produce fully auditable correction trails</li>
+        <li>Support executive, compliance, and financial oversight</li>
       </ul>
 
-      <hr style={{ margin: "32px 0" }} />
+      <h2>Delivered through focused systems</h2>
+      <p style={{ maxWidth: 900 }}>
+        Platform capabilities are delivered through purpose-built systems,
+        including <strong>Beyond-Claims</strong> for autonomous recovery and
+        <strong> Beyond-Truth</strong> for audit and financial intelligence.
+      </p>
 
-      <h2>Who this is for</h2>
-      <ul style={{ fontSize: 16, lineHeight: 1.8 }}>
-        <li>Hospitals and health systems</li>
-        <li>Large physician groups</li>
-        <li>RCM vendors and clearinghouses</li>
-        <li>Consulting and audit firms</li>
-      </ul>
-
-      <p style={{ fontSize: 17, marginTop: 24 }}>
-        Typical deployments uncover <b>6–10% additional collectible revenue</b>
-        on already-billed claims — without increasing denial volume.
+      <p style={{ marginTop: 40, fontStyle: "italic" }}>
+        Technical architecture and phase detail available in the Technical
+        Overview.
       </p>
     </main>
   );
