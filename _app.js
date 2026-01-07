@@ -1,43 +1,38 @@
-export default function MyApp({ Component, pageProps }) {
-  const linkStyle = { textDecoration: "none", color: "#111" };
+// /pages/_app.js
 
+import Link from "next/link";
+
+export default function MyApp({ Component, pageProps }) {
   return (
     <>
-      <nav
+      <header
         style={{
-          padding: "20px 40px",
-          borderBottom: "1px solid #eee",
+          padding: "20px 60px",
+          borderBottom: "1px solid #e5e7eb",
           display: "flex",
-          gap: "24px",
-          fontFamily: "system-ui",
-          fontSize: 15,
+          justifyContent: "space-between",
           alignItems: "center",
+          fontFamily: "system-ui"
         }}
       >
-        <a href="/" style={{ ...linkStyle, fontWeight: 600 }}>
-          Beyond Health Systems
-        </a>
-        <a href="/platform" style={linkStyle}>Platform</a>
-        <a href="/beyond-claims" style={linkStyle}>Beyond-Claims</a>
-        <a href="/beyond-truth" style={linkStyle}>Beyond-Truth</a>
-        <a href="/pricing" style={linkStyle}>Pricing</a>
-        <a href="/contact" style={linkStyle}>Contact</a>
-      </nav>
+        <div style={{ fontWeight: 700 }}>
+          <Link href="/" style={{ textDecoration: "none", color: "#111" }}>
+            Beyond Health Systems
+          </Link>
+        </div>
+
+        <nav style={{ display: "flex", gap: 20 }}>
+          <Link href="/platform">Platform</Link>
+          <Link href="/beyond-claims">Beyond-Claims</Link>
+          <Link href="/beyond-truth">Beyond-Truth</Link>
+          <Link href="/pricing">Pricing</Link>
+          <Link href="/who-its-for">Who It’s For</Link>
+          <Link href="/technical">Technical</Link>
+          <Link href="/contact">Contact</Link>
+        </nav>
+      </header>
 
       <Component {...pageProps} />
-
-      <footer
-        style={{
-          marginTop: 80,
-          padding: "40px",
-          borderTop: "1px solid #eee",
-          fontSize: 13,
-          color: "#555",
-          fontFamily: "system-ui",
-        }}
-      >
-        © {new Date().getFullYear()} Beyond Health Systems
-      </footer>
     </>
   );
 }
