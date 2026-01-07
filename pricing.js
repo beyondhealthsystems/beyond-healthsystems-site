@@ -1,58 +1,88 @@
 export default function Pricing() {
   return (
-    <main
-      style={{
-        padding: "80px 60px",
-        fontFamily: "system-ui",
-        maxWidth: 1100,
-        margin: "0 auto",
-        lineHeight: 1.6
-      }}
-    >
+    <main style={{ padding: "80px", fontFamily: "system-ui", maxWidth: 1100 }}>
       <h1>Pricing Philosophy</h1>
 
-      <p style={{ fontSize: 18, maxWidth: 820 }}>
-        Beyond Health Systems is priced to align incentives, preserve
-        operational integrity, and eliminate financial interference.
+      <p>
+        Beyond Health Systems pricing is designed to align incentives, remove
+        interference, and make recovery economically rational.
       </p>
 
-      <h2>Core Principles</h2>
+      <h2>Aligned Incentives</h2>
+
+      <p>
+        Beyond does not profit from volume, complexity, or prolonged disputes.
+        Our incentives are aligned with outcomes — accuracy, recovery, and
+        verified financial truth.
+      </p>
+
+      <h2>Paid After Collection</h2>
+
+      <p>
+        Beyond-Claims is compensated only when recoveries occur. If no value is
+        delivered, no payment is required.
+      </p>
+
+      <p>
+        This ensures that Beyond operates as a partner — not a cost center.
+      </p>
+
+      <h2>Non-Interference Model</h2>
+
+      <p>
+        Beyond operates alongside existing billing systems, clearinghouses, and
+        RCM vendors. It does not replace workflows or require operational
+        disruption.
+      </p>
+
       <ul>
-        <li><strong>Paid only after collection</strong></li>
-        <li><strong>No disruption to existing workflows</strong></li>
-        <li><strong>No percentage of billed revenue</strong></li>
-        <li><strong>No interference with payer relationships</strong></li>
+        <li>No workflow changes required</li>
+        <li>No staffing increases</li>
+        <li>No retraining burden</li>
       </ul>
 
-      <h2>How It Works</h2>
+      <h2>Recovery at Scale</h2>
+
       <p>
-        Beyond-Claims operates independently alongside existing RCM systems.
-        It identifies underpayments, partials, and recoverable value that
-        traditional workflows ignore or abandon.
+        Traditional recovery fails because partial payments and small variances
+        are uneconomical to pursue manually.
       </p>
 
       <p>
-        We are compensated only when recovered dollars are successfully
-        collected — never before.
+        Beyond changes that equation by enabling:
       </p>
 
-      <h2>What We Target</h2>
       <ul>
-        <li>Silent underpayments</li>
-        <li>Partial payments below contract</li>
-        <li>Abandoned claims deemed “uneconomic”</li>
-        <li>Systemic payer enforcement drift</li>
+        <li>Recovery of partial underpayments</li>
+        <li>Enforcement of contract terms at scale</li>
+        <li>Unlimited resubmissions when justified</li>
+        <li>Recovery of revenue historically abandoned</li>
       </ul>
 
-      <h2>Expected Impact</h2>
+      <h2>No Caps. No Artificial Limits.</h2>
+
       <p>
-        For large health systems, this typically represents a
-        <strong> 6–10% uplift</strong> in collected revenue on claims
-        already billed — without increasing denial rates or staff burden.
+        Beyond does not impose arbitrary caps on recovery volume or submission
+        attempts. If a claim is correctable and recoverable, the system pursues
+        it.
       </p>
 
-      <p style={{ marginTop: 40, fontStyle: "italic" }}>
-        Detailed economic models and case examples available on request.
+      <h2>Transparency</h2>
+
+      <p>
+        All recoveries, corrections, and outcomes are auditable. Clients can
+        trace how value was identified, validated, and realized.
+      </p>
+
+      <h2>Custom Engagements</h2>
+
+      <p>
+        Pricing structures vary based on organization size, claim volume, and
+        engagement scope. Final terms are tailored after a platform review.
+      </p>
+
+      <p>
+        To discuss pricing and fit, contact us directly.
       </p>
     </main>
   );
