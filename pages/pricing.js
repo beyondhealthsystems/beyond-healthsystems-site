@@ -13,6 +13,7 @@ export default function Pricing() {
       padding: "0 40px",
     },
 
+    /* NAV */
     navWrap: {
       position: "sticky",
       top: 0,
@@ -42,39 +43,42 @@ export default function Pricing() {
       fontWeight: 600,
     },
 
+    /* CONTENT */
     section: {
-      padding: "84px 0 56px",
+      padding: "84px 0 64px",
     },
     h1: {
       fontFamily: "Georgia, serif",
       fontSize: 46,
       lineHeight: 1.15,
-      marginBottom: 18,
+      marginBottom: 24,
     },
     p: {
       fontSize: 17,
       lineHeight: 1.65,
-      maxWidth: 900,
-      marginTop: 20,
+      maxWidth: 920,
+      marginTop: 22,
     },
 
     imageCard: {
+      marginTop: 30,
       borderRadius: 18,
       overflow: "hidden",
       background: "#ffffff",
-      boxShadow: "0 20px 50px rgba(15, 23, 42, 0.15)",
-      marginTop: 28,
+      boxShadow: "0 22px 60px rgba(15, 23, 42, 0.18)",
     },
     img: {
       width: "100%",
       display: "block",
     },
 
+    /* FOOTER */
     footer: {
       padding: "28px 0 40px",
       borderTop: "1px solid rgba(15, 23, 42, 0.08)",
       fontSize: 13,
       color: "#475569",
+      marginTop: 80,
     },
   };
 
@@ -101,11 +105,11 @@ export default function Pricing() {
         <div style={styles.container}>
           <h1 style={styles.h1}>Pricing Philosophy</h1>
 
-          {/* IMAGE FIRST */}
+          {/* IMAGE */}
           <div style={styles.imageCard}>
             <img
-              src="/images/pricing-comparison.png"
-              alt="Comparison of net hospital collections with traditional RCM versus Beyond-Claims and Beyond-Truth"
+              src="/images/pricing-net-collections.png"
+              alt="Comparison of net hospital collections using traditional RCM versus Beyond-Claims and Beyond-Truth"
               style={styles.img}
             />
           </div>
@@ -116,8 +120,8 @@ export default function Pricing() {
             <b>$1B</b> in claims after short pays, fees, and abandonment. With{" "}
             <b>Beyond-Claims</b> and <b>Beyond-Truth</b>, conservative modeling
             supports approximately <b>$930M</b> in collections before fees.
-            After a <b>5% fee applied only to incremental recovery</b>,
-            hospitals retain approximately <b>$922.5M</b> —{" "}
+            After a <b>5% fee applied only to incremental recovery</b>, hospitals
+            retain approximately <b>$922.5M</b> —{" "}
             <b>over $140M more</b> on the same <b>$1B</b> in claims.
           </p>
         </div>
