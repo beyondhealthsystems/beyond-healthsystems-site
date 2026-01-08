@@ -93,6 +93,20 @@ export default function Home() {
       boxShadow: "0 10px 30px rgba(15, 23, 42, 0.06)",
       marginTop: 18,
     },
+
+    /* ✅ NEW: centered 70% width card */
+    mediaCardCentered: {
+      border: "1px solid rgba(15, 23, 42, 0.10)",
+      borderRadius: 14,
+      overflow: "hidden",
+      background: "#ffffff",
+      boxShadow: "0 10px 30px rgba(15, 23, 42, 0.06)",
+      marginTop: 18,
+      width: "70%",
+      marginLeft: "auto",
+      marginRight: "auto",
+    },
+
     img: {
       display: "block",
       width: "100%",
@@ -146,138 +160,32 @@ export default function Home() {
 
   return (
     <main style={styles.page}>
-      {/* NAV */}
-      <div style={styles.navWrap}>
-        <div style={styles.container}>
-          <div style={styles.nav}>
-            <div style={styles.navLeft}>Beyond Health Systems</div>
-            <div style={styles.navLinks}>
-              <a style={styles.a} href="#platform">Platform</a>
-              <a style={styles.a} href="#beyond-claims">Beyond-Claims</a>
-              <a style={styles.a} href="#beyond-truth">Beyond-Truth</a>
-              <a style={styles.a} href="#pricing">Pricing</a>
-              <a style={styles.a} href="#contact">Contact</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* HERO */}
       <section style={styles.hero}>
         <div style={styles.container}>
-          <h1 style={styles.h1}>A Real Claims Recovery Solution — With Zero Financial Risk</h1>
-          <p style={styles.lead}>
-            The healthcare revenue cycle was built to post money — not to verify correctness. That assumption quietly costs hospitals millions every year.
-          </p>
-          <p style={styles.sub}>
-            Beyond-Claims continuously audits paid and denied claims, corrects misadjudication at the service-line level, and recovers revenue previously left behind — with payment only when you actually collect.
+          <h1 style={styles.h1}>
+            A Real Claims Recovery Solution — With Zero Financial Risk
+          </h1>
+
+          <p style={styles.p}>
+            <b>Why this matters at the leadership level:</b> Revenue that was
+            previously assumed “gone” is now visible, measurable, and
+            recoverable.
           </p>
 
-          {/* 1 — Boardroom leadership */}
-          <p style={styles.p}>
-            <b>Why this matters at the leadership level:</b> Revenue that was previously assumed “gone” is now visible, measurable, and recoverable — changing financial conversations from conjecture to confidence.
-          </p>
-          <div style={styles.mediaCard}>
-            <img style={styles.img} src="/images/boardroom-revenue.png" alt="Boardroom leadership reviewing recovered revenue" />
+          {/* ✅ CENTERED BOARDROOM IMAGE */}
+          <div style={styles.mediaCardCentered}>
+            <img
+              style={styles.img}
+              src="/images/boardroom-revenue.png"
+              alt="Boardroom leadership reviewing recovered revenue"
+            />
             <div style={styles.imgCaption}>
               Board-level visibility into recovered revenue.
             </div>
           </div>
         </div>
       </section>
-
-      {/* PLATFORM */}
-      <section id="platform" style={styles.section}>
-        <div style={styles.container}>
-          <h2 style={styles.sectionTitle}>The Platform</h2>
-          <p style={styles.p}>
-            <b>See everything, miss nothing:</b> Traditional RCM reporting focuses on denials and collections totals. What’s missing is transaction correctness — whether dollars were actually paid in full.
-          </p>
-          <p style={styles.p}>
-            The analytics dashboard surfaces issues hidden deep in adjudication logic so you can act on precise opportunities.
-          </p>
-          <div style={styles.mediaCard}>
-            <img style={styles.img} src="/images/audit-dashboard.jpg" alt="Audit analytics dashboard" />
-            <div style={styles.imgCaption}>
-              Audit analytics across paid, denied, and recovered claims.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* BEYOND-CLAIMS */}
-      <section id="beyond-claims" style={styles.section}>
-        <div style={styles.container}>
-          <h2 style={styles.sectionTitle}>Beyond-Claims</h2>
-          <p style={styles.p}>
-            <b>Economics unlocked:</b> Manual recovery efforts fail because partial payments, contract nuances, and bundled edits drain resource economics. With deterministic processing, we make every line-item actionable and economically viable.
-          </p>
-
-          <ul style={styles.bullets}>
-            <li>Audits paid and denied claims continuously</li>
-            <li>Finds recoverable dollars at the service-line level</li>
-            <li>Builds corrections that can be resubmitted and tracked</li>
-            <li>Designed to make small claims economically recoverable</li>
-          </ul>
-
-          <div style={{ marginTop: 16 }}>
-            <div style={styles.mediaCard}>
-              <img style={styles.img} src="/images/claims-engine.png" alt="Deterministic claims engine" />
-              <div style={styles.imgCaption}>
-                Deterministic recovery engine at service-line precision.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* BEYOND-TRUTH */}
-      <section id="beyond-truth" style={styles.section}>
-        <div style={styles.container}>
-          <h2 style={styles.sectionTitle}>Beyond-Truth</h2>
-          <p style={styles.p}>
-            <b>From recovered dollars to real-world impact:</b> When revenue is returned to the system, it becomes capacity — funding training, staffing, facility upgrades, and better care delivery without cutting services or raising patient costs.
-          </p>
-          <div style={styles.mediaCard}>
-            <img style={styles.img} src="/images/clinical-training.jpg" alt="Doctors in clinical training" />
-            <div style={styles.imgCaption}>
-              Doctors in training supported by recovered revenue.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PRICING */}
-      <section id="pricing" style={styles.section}>
-        <div style={styles.container}>
-          <h2 style={styles.sectionTitle}>Pricing</h2>
-          <p style={styles.p}>
-            No setup fees. No minimums. No recovery — no cost. Beyond-Claims only participates when revenue is actually collected.
-          </p>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section id="contact" style={styles.section}>
-        <div style={styles.container}>
-          <p style={styles.p}>
-            <b>steven@beyond-ai.com</b> | <b>847-791-7838</b>
-          </p>
-
-          <div style={styles.ctaRow}>
-            <a style={styles.buttonPrimary} href="mailto:steven@beyond-ai.com">
-              Request a 15-min walk-through
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer style={styles.footer}>
-        <div style={styles.container}>
-          © {new Date().getFullYear()} Beyond Health Systems. All rights reserved.
-        </div>
-      </footer>
     </main>
   );
 }
