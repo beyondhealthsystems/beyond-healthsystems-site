@@ -14,8 +14,6 @@ export default function Pricing() {
       margin: "0 auto",
       padding: "0 40px",
     },
-
-    /* NAV */
     navWrap: {
       position: "sticky",
       top: 0,
@@ -46,9 +44,8 @@ export default function Pricing() {
       fontWeight: 600,
     },
 
-    /* HERO */
     hero: {
-      padding: "84px 0 46px",
+      padding: "84px 0 42px",
     },
     h1: {
       fontFamily: "Georgia, serif",
@@ -57,21 +54,14 @@ export default function Pricing() {
       marginBottom: 18,
       letterSpacing: "-0.02em",
     },
-    lead: {
-      fontSize: 18,
-      lineHeight: 1.6,
-      maxWidth: 920,
-      marginBottom: 14,
-    },
 
-    /* SECTIONS */
     section: {
-      padding: "42px 0",
+      padding: "46px 0",
       borderTop: "1px solid rgba(15, 23, 42, 0.08)",
     },
     h2: {
       fontSize: 28,
-      marginBottom: 12,
+      marginBottom: 14,
       letterSpacing: "-0.01em",
     },
     p: {
@@ -86,103 +76,53 @@ export default function Pricing() {
       maxWidth: 940,
     },
 
-    /* PRICE CARD */
-    priceCard: {
+    mediaCard: {
       marginTop: 18,
       border: "1px solid rgba(15, 23, 42, 0.10)",
       borderRadius: 14,
       background: "#ffffff",
       boxShadow: "0 10px 30px rgba(15, 23, 42, 0.06)",
-      padding: "18px 18px",
-      maxWidth: 940,
-    },
-    priceTop: {
-      display: "flex",
-      alignItems: "baseline",
-      justifyContent: "space-between",
-      gap: 18,
-      flexWrap: "wrap",
-      marginBottom: 10,
-    },
-    priceBig: {
-      fontSize: 42,
-      fontWeight: 800,
-      letterSpacing: "-0.02em",
-    },
-    priceSub: {
-      fontSize: 14,
-      color: "#334155",
-      maxWidth: 520,
-      lineHeight: 1.5,
-    },
-    badgeRow: {
-      display: "flex",
-      gap: 8,
-      flexWrap: "wrap",
-      marginTop: 8,
-    },
-    badge: {
-      fontSize: 12,
-      padding: "6px 10px",
-      borderRadius: 999,
-      border: "1px solid rgba(15, 23, 42, 0.12)",
-      background: "#ffffff",
-      fontWeight: 700,
-    },
-
-    /* IMAGE */
-    imageCard: {
-      marginTop: 26,
-      borderRadius: 18,
       overflow: "hidden",
-      background: "#ffffff",
-      boxShadow: "0 22px 60px rgba(15, 23, 42, 0.18)",
-      maxWidth: 940,
     },
     img: {
-      width: "100%",
       display: "block",
+      width: "100%",
+      height: "auto",
     },
 
-    /* CALLOUT */
-    callout: {
-      marginTop: 16,
+    priceCard: {
+      marginTop: 24,
       border: "1px solid rgba(15, 23, 42, 0.10)",
       borderRadius: 14,
       background: "#ffffff",
       boxShadow: "0 10px 30px rgba(15, 23, 42, 0.06)",
-      padding: "16px 16px",
+      padding: "20px 20px",
       maxWidth: 940,
     },
-    calloutText: {
-      margin: 0,
+    priceBig: {
+      fontSize: 46,
+      fontWeight: 800,
+      letterSpacing: "-0.02em",
+      marginBottom: 6,
+    },
+    priceSub: {
       fontSize: 16,
-      lineHeight: 1.65,
+      lineHeight: 1.6,
+      marginBottom: 14,
+      maxWidth: 720,
     },
-
-    /* CTA */
-    ctaRow: {
+    badgeRow: {
       display: "flex",
-      gap: 12,
+      gap: 10,
       flexWrap: "wrap",
-      marginTop: 16,
     },
-    buttonPrimary: {
-      background: "#16a34a",
-      color: "#ffffff",
-      borderRadius: 10,
-      padding: "10px 14px",
+    badge: {
+      fontSize: 13,
+      padding: "6px 12px",
+      borderRadius: 999,
+      border: "1px solid rgba(15, 23, 42, 0.12)",
       fontWeight: 700,
-      textDecoration: "none",
-    },
-    buttonSecondary: {
-      background: "transparent",
-      color: "#1e3a8a",
-      border: "1px solid rgba(30, 58, 138, 0.35)",
-      borderRadius: 10,
-      padding: "10px 14px",
-      fontWeight: 700,
-      textDecoration: "none",
+      background: "#ffffff",
     },
 
     footer: {
@@ -216,24 +156,37 @@ export default function Pricing() {
       <section style={styles.hero}>
         <div style={styles.container}>
           <h1 style={styles.h1}>Pricing</h1>
+        </div>
+      </section>
 
-          <p style={styles.lead}>
-            Pricing aligned to outcomes, auditability, and non-interference.
-          </p>
+      {/* IMAGE */}
+      <section style={styles.section}>
+        <div style={styles.container}>
+          <div style={styles.mediaCard}>
+            <img
+              src="/images/pricing-future-net-comparison.png"
+              alt="Future-state comparison of net hospital collections using traditional RCM versus Beyond-Claims and Beyond-Truth"
+              style={styles.img}
+            />
+          </div>
 
-          <p style={styles.lead}>
-            We only participate when revenue is actually collected — and the fee
-            is fully inclusive.
-          </p>
-
+          {/* PRICING BLOCK — MOVED UNDER IMAGE */}
           <div style={styles.priceCard}>
-            <div style={styles.priceTop}>
-              <div style={styles.priceBig}>5%</div>
-              <div style={styles.priceSub}>
-                of incremental dollars actually collected through Beyond-driven
-                recovery activity. No recovery = no fee.
-              </div>
-            </div>
+            <p style={styles.p}>
+              <b>Pricing aligned to outcomes, auditability, and non-interference.</b>
+            </p>
+
+            <p style={styles.p}>
+              We only participate when revenue is actually collected — and the
+              fee is fully inclusive.
+            </p>
+
+            <div style={styles.priceBig}>5%</div>
+
+            <p style={styles.priceSub}>
+              of incremental dollars actually collected through Beyond-driven
+              recovery activity. <b>No recovery = no fee.</b>
+            </p>
 
             <div style={styles.badgeRow}>
               <span style={styles.badge}>All-inclusive</span>
@@ -242,31 +195,6 @@ export default function Pricing() {
               <span style={styles.badge}>Updates included</span>
               <span style={styles.badge}>Auditable outputs</span>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ECONOMIC COMPARISON */}
-      <section style={styles.section}>
-        <div style={styles.container}>
-          <h2 style={styles.h2}>What This Looks Like in Practice</h2>
-
-          <p style={styles.p}>
-            With current RCM processes, hospitals often net <b>$740M–$780M</b> on{" "}
-            <b>$1B</b> in claims after short pays, fees, and abandonment. With{" "}
-            <b>Beyond-Claims</b> and <b>Beyond-Truth</b>, conservative modeling
-            supports approximately <b>$930M</b> in collections before fees.
-            After a <b>5% fee applied only to incremental recovery</b>, hospitals
-            retain approximately <b>$922.5M</b> —{" "}
-            <b>over $140M more</b> on the same <b>$1B</b> in claims.
-          </p>
-
-          <div style={styles.imageCard}>
-            <img
-              src="/images/pricing-future-net-comparison.png"
-              alt="Future-state comparison of net hospital collections using traditional RCM versus Beyond-Claims and Beyond-Truth"
-              style={styles.img}
-            />
           </div>
         </div>
       </section>
