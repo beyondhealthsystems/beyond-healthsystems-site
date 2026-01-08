@@ -44,14 +44,13 @@ export default function Platform() {
       fontWeight: 600,
     },
 
-    /* HERO with landing-page background */
+    /* HERO — fixed */
     hero: {
-      padding: "84px 0 46px",
       backgroundImage: "url('/images/hero-background-light.png')",
       backgroundSize: "cover",
       backgroundPosition: "center",
     },
-    heroOverlay: {
+    heroInner: {
       background: "rgba(255,255,255,0.82)",
       padding: "84px 0 46px",
     },
@@ -136,7 +135,7 @@ export default function Platform() {
 
       {/* HERO */}
       <section style={styles.hero}>
-        <div style={styles.heroOverlay}>
+        <div style={styles.heroInner}>
           <div style={styles.container}>
             <h1 style={styles.h1}>
               A Deterministic Platform for Revenue Integrity
@@ -208,7 +207,7 @@ export default function Platform() {
             <li>Service-line level adjudication review</li>
             <li>Repeatable rule enforcement</li>
             <li>Full traceability to source data</li>
-            <li>No black-box scoring models</li>
+            <li>No black-box scoring scoring models</li>
           </ul>
         </div>
       </section>
