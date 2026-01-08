@@ -14,6 +14,8 @@ export default function Platform() {
       margin: "0 auto",
       padding: "0 40px",
     },
+
+    /* NAV */
     navWrap: {
       position: "sticky",
       top: 0,
@@ -44,15 +46,19 @@ export default function Platform() {
       fontWeight: 600,
     },
 
-    /* HERO — fixed */
+    /* HERO — HARD FIX */
     hero: {
       backgroundImage: "url('/images/hero-background-light.png')",
       backgroundSize: "cover",
       backgroundPosition: "center",
+      minHeight: 520,
+      display: "flex",
+      alignItems: "center",
     },
-    heroInner: {
-      background: "rgba(255,255,255,0.82)",
-      padding: "84px 0 46px",
+    heroOverlay: {
+      width: "100%",
+      background: "rgba(255,255,255,0.85)",
+      padding: "84px 0 56px",
     },
 
     h1: {
@@ -89,6 +95,7 @@ export default function Platform() {
       lineHeight: 1.7,
       maxWidth: 900,
     },
+
     mediaCard: {
       marginTop: 22,
       border: "1px solid rgba(15, 23, 42, 0.10)",
@@ -106,6 +113,7 @@ export default function Platform() {
       fontSize: 14,
       color: "#334155",
     },
+
     footer: {
       padding: "30px 0 40px",
       borderTop: "1px solid rgba(15, 23, 42, 0.08)",
@@ -135,16 +143,16 @@ export default function Platform() {
 
       {/* HERO */}
       <section style={styles.hero}>
-        <div style={styles.heroInner}>
+        <div style={styles.heroOverlay}>
           <div style={styles.container}>
             <h1 style={styles.h1}>
               A Deterministic Platform for Revenue Integrity
             </h1>
 
             <p style={styles.lead}>
-              The Beyond platform continuously audits paid and denied claims at the
-              service-line level, identifies misadjudication, and enables recovery
-              workflows that were previously invisible or uneconomical.
+              The Beyond platform continuously audits paid and denied claims at
+              the service-line level, identifies misadjudication, and enables
+              recovery workflows that were previously invisible or uneconomical.
             </p>
 
             <div style={styles.mediaCard}>
@@ -161,7 +169,7 @@ export default function Platform() {
         </div>
       </section>
 
-      {/* WHAT IT AUDITS */}
+      {/* CONTENT */}
       <section style={styles.section}>
         <div style={styles.container}>
           <h2 style={styles.h2}>What the Platform Audits</h2>
@@ -175,56 +183,6 @@ export default function Platform() {
             <li>Paid claims with line-item discrepancies</li>
             <li>Claims auto-closed within tolerance thresholds</li>
             <li>Claims affected by contract enforcement drift</li>
-          </ul>
-        </div>
-      </section>
-
-      {/* WHY ERRORS PERSIST */}
-      <section style={styles.section}>
-        <div style={styles.container}>
-          <h2 style={styles.h2}>Why Errors Persist After Payment</h2>
-          <p style={styles.p}>
-            Most revenue leakage occurs not because denials are ignored, but
-            because paid claims are assumed to be correct.
-          </p>
-          <p style={styles.p}>
-            Contract misapplication, modifier logic, bundling errors, and policy
-            changes often affect only portions of a claim — allowing errors to
-            survive posting and never trigger review.
-          </p>
-        </div>
-      </section>
-
-      {/* HOW IT WORKS */}
-      <section style={styles.section}>
-        <div style={styles.container}>
-          <h2 style={styles.h2}>How Beyond Evaluates Claims</h2>
-          <p style={styles.p}>
-            Beyond uses deterministic, rule-based logic — not probabilistic AI —
-            to ensure every outcome is auditable, explainable, and defensible.
-          </p>
-          <ul style={styles.bullets}>
-            <li>Service-line level adjudication review</li>
-            <li>Repeatable rule enforcement</li>
-            <li>Full traceability to source data</li>
-            <li>No black-box scoring scoring models</li>
-          </ul>
-        </div>
-      </section>
-
-      {/* OUTPUT */}
-      <section style={styles.section}>
-        <div style={styles.container}>
-          <h2 style={styles.h2}>What Clients Receive</h2>
-          <p style={styles.p}>
-            The platform delivers governed financial outcomes — not theoretical
-            insights.
-          </p>
-          <ul style={styles.bullets}>
-            <li>Verified recovery opportunity by payer and service line</li>
-            <li>Recovery tracking through payment confirmation</li>
-            <li>Executive-ready audit transparency</li>
-            <li>Board-appropriate financial accountability</li>
           </ul>
         </div>
       </section>
