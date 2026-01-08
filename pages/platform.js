@@ -43,9 +43,19 @@ export default function Platform() {
       textDecoration: "none",
       fontWeight: 600,
     },
+
+    /* HERO with landing-page background */
     hero: {
       padding: "84px 0 46px",
+      backgroundImage: "url('/images/hero-background-light.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
     },
+    heroOverlay: {
+      background: "rgba(255,255,255,0.82)",
+      padding: "84px 0 46px",
+    },
+
     h1: {
       fontFamily: "Georgia, serif",
       fontSize: 48,
@@ -59,6 +69,7 @@ export default function Platform() {
       maxWidth: 900,
       marginBottom: 18,
     },
+
     section: {
       padding: "42px 0",
       borderTop: "1px solid rgba(15, 23, 42, 0.08)",
@@ -125,25 +136,27 @@ export default function Platform() {
 
       {/* HERO */}
       <section style={styles.hero}>
-        <div style={styles.container}>
-          <h1 style={styles.h1}>
-            A Deterministic Platform for Revenue Integrity
-          </h1>
+        <div style={styles.heroOverlay}>
+          <div style={styles.container}>
+            <h1 style={styles.h1}>
+              A Deterministic Platform for Revenue Integrity
+            </h1>
 
-          <p style={styles.lead}>
-            The Beyond platform continuously audits paid and denied claims at the
-            service-line level, identifies misadjudication, and enables recovery
-            workflows that were previously invisible or uneconomical.
-          </p>
+            <p style={styles.lead}>
+              The Beyond platform continuously audits paid and denied claims at the
+              service-line level, identifies misadjudication, and enables recovery
+              workflows that were previously invisible or uneconomical.
+            </p>
 
-          <div style={styles.mediaCard}>
-            <img
-              style={styles.img}
-              src="/images/platform-process.png"
-              alt="Beyond platform audit, evaluation, and recovery process"
-            />
-            <div style={styles.caption}>
-              Continuous audit → deterministic evaluation → verified recovery.
+            <div style={styles.mediaCard}>
+              <img
+                style={styles.img}
+                src="/images/platform-process.png"
+                alt="Beyond platform audit, evaluation, and recovery process"
+              />
+              <div style={styles.caption}>
+                Continuous audit → deterministic evaluation → verified recovery.
+              </div>
             </div>
           </div>
         </div>
@@ -153,12 +166,10 @@ export default function Platform() {
       <section style={styles.section}>
         <div style={styles.container}>
           <h2 style={styles.h2}>What the Platform Audits</h2>
-
           <p style={styles.p}>
             The platform evaluates both denied and paid claims without relying on
             sampling, thresholds, or assumptions once payment posts.
           </p>
-
           <ul style={styles.bullets}>
             <li>Fully denied claims</li>
             <li>Partially paid claims</li>
@@ -173,12 +184,10 @@ export default function Platform() {
       <section style={styles.section}>
         <div style={styles.container}>
           <h2 style={styles.h2}>Why Errors Persist After Payment</h2>
-
           <p style={styles.p}>
             Most revenue leakage occurs not because denials are ignored, but
             because paid claims are assumed to be correct.
           </p>
-
           <p style={styles.p}>
             Contract misapplication, modifier logic, bundling errors, and policy
             changes often affect only portions of a claim — allowing errors to
@@ -191,12 +200,10 @@ export default function Platform() {
       <section style={styles.section}>
         <div style={styles.container}>
           <h2 style={styles.h2}>How Beyond Evaluates Claims</h2>
-
           <p style={styles.p}>
             Beyond uses deterministic, rule-based logic — not probabilistic AI —
             to ensure every outcome is auditable, explainable, and defensible.
           </p>
-
           <ul style={styles.bullets}>
             <li>Service-line level adjudication review</li>
             <li>Repeatable rule enforcement</li>
@@ -210,12 +217,10 @@ export default function Platform() {
       <section style={styles.section}>
         <div style={styles.container}>
           <h2 style={styles.h2}>What Clients Receive</h2>
-
           <p style={styles.p}>
             The platform delivers governed financial outcomes — not theoretical
             insights.
           </p>
-
           <ul style={styles.bullets}>
             <li>Verified recovery opportunity by payer and service line</li>
             <li>Recovery tracking through payment confirmation</li>
