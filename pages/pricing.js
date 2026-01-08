@@ -246,7 +246,7 @@ export default function Pricing() {
         </div>
       </section>
 
-      {/* COMPARISON + IMAGE */}
+      {/* ECONOMIC COMPARISON */}
       <section style={styles.section}>
         <div style={styles.container}>
           <h2 style={styles.h2}>What This Looks Like in Practice</h2>
