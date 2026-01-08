@@ -95,7 +95,7 @@ export default function Home() {
     },
     img: {
       display: "block",
-      width: "70%",
+      width: "100%",
       height: "auto",
     },
     imgCaption: {
