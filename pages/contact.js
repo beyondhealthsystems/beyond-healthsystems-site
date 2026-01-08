@@ -174,9 +174,9 @@ export default function Contact() {
 
           <div style={styles.contactBlock}>
             <p>
-              <b>Email:</b> steven@beyond-ai.com
+              <b>Email:</b> steven@beyond-claims.com
               <br />
-              <b>Phone:</b> 847-791-7838
+              
             </p>
 
             <p>
