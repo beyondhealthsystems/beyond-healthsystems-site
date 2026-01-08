@@ -43,9 +43,16 @@ export default function BeyondClaims() {
       textDecoration: "none",
       fontWeight: 600,
     },
+
+    /* HERO with background */
     hero: {
       padding: "84px 0 46px",
+      backgroundImage: "url('/images/hero-background-light.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
     },
+
     h1: {
       fontFamily: "Georgia, serif",
       fontSize: 48,
@@ -126,9 +133,7 @@ export default function BeyondClaims() {
       {/* HERO */}
       <section style={styles.hero}>
         <div style={styles.container}>
-          <h1 style={styles.h1}>
-            Beyond-Claims
-          </h1>
+          <h1 style={styles.h1}>Beyond-Claims</h1>
 
           <p style={styles.lead}>
             Beyond-Claims is the execution layer of the Beyond platform — focused
