@@ -22,14 +22,14 @@ export default function Home() {
 
         {/* IMAGE 1 — BOARDROOM */}
         <img
-          src="/images/boardroom-revenue.jpg"
+          src="/images/boardroom-revenue.png"
           alt="Hospital leadership reviewing recovered revenue results"
           style={{ width: "100%", borderRadius: 10, marginBottom: 16 }}
         />
 
         <p style={{ fontSize: 16, color: "#444", marginBottom: 32 }}>
           Confirmed recovered revenue — returned to the operating budget and
-          reinvested into care delivery.
+          reinvested into patient care.
         </p>
 
         <p style={{ fontSize: 18 }}>
@@ -46,8 +46,7 @@ export default function Home() {
         <p style={{ fontSize: 18 }}>
           At roughly <strong>$2.9T</strong> in claims-based provider spend, even a{" "}
           <strong>~14–15% initial denial rate</strong> means hundreds of billions
-          of dollars enter denial workflows — while many underpayments are never
-          reworked.
+          of dollars enter denial workflows — while underpayments go unseen.
         </p>
 
         {/* IMAGE 2 — AUDIT DASHBOARD */}
@@ -69,7 +68,7 @@ export default function Home() {
 
         {/* IMAGE 3 — CLAIMS ENGINE */}
         <img
-          src="/images/claims-engine.jpg"
+          src="/images/claims-engine.png"
           alt="Deterministic engine processing healthcare claims and denials"
           style={{ width: "100%", borderRadius: 10, margin: "24px 0" }}
         />
