@@ -94,11 +94,10 @@ export default function Home() {
       marginTop: 18,
     },
     img: {
-  display: "block",
-  width: "70%",
-  height: "auto",
-  margin: "0 auto",
-},
+      display: "block",
+      width: "100%",
+      height: "auto",
+    },
     imgCaption: {
       padding: "12px 14px",
       fontSize: 14,
