@@ -150,7 +150,7 @@ export default function Contact() {
           <h1 style={styles.h1}>Contact</h1>
 
           <p style={styles.lead}>
-            Beyond works with healthcare leadership teams evaluating recovery
+            Beyond-Claims works with healthcare leadership teams evaluating recovery
             economics, auditability, and long-term financial integrity.
           </p>
 
