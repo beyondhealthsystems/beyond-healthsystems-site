@@ -59,20 +59,10 @@ export default function Pricing() {
       padding: "46px 0",
       borderTop: "1px solid rgba(15, 23, 42, 0.08)",
     },
-    h2: {
-      fontSize: 28,
-      marginBottom: 14,
-      letterSpacing: "-0.01em",
-    },
     p: {
       fontSize: 16,
       lineHeight: 1.65,
       marginBottom: 14,
-      maxWidth: 940,
-    },
-    bullets: {
-      marginLeft: 18,
-      lineHeight: 1.75,
       maxWidth: 940,
     },
 
@@ -159,7 +149,7 @@ export default function Pricing() {
         </div>
       </section>
 
-      {/* IMAGE */}
+      {/* IMAGE + ECONOMICS + PRICING */}
       <section style={styles.section}>
         <div style={styles.container}>
           <div style={styles.mediaCard}>
@@ -170,7 +160,18 @@ export default function Pricing() {
             />
           </div>
 
-          {/* PRICING BLOCK — MOVED UNDER IMAGE */}
+          {/* ECONOMICS PARAGRAPH — ADDED BACK */}
+          <p style={{ ...styles.p, marginTop: 18 }}>
+            With current RCM processes, hospitals often net <b>$740M–$780M</b> on{" "}
+            <b>$1B</b> in claims after short pays, fees, and abandonment. With{" "}
+            <b>Beyond-Claims</b> and <b>Beyond-Truth</b>, conservative modeling
+            supports approximately <b>$930M</b> in collections before fees.
+            After a <b>5% fee applied only to incremental recovery</b>, hospitals
+            retain approximately <b>$922.5M</b> —{" "}
+            <b>over $140M more</b> on the same <b>$1B</b> in claims.
+          </p>
+
+          {/* PRICING BLOCK — UNCHANGED */}
           <div style={styles.priceCard}>
             <p style={styles.p}>
               <b>Pricing aligned to outcomes, auditability, and non-interference.</b>
