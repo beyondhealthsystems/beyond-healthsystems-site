@@ -1,7 +1,33 @@
 export default function Home() {
   return (
-    <>
-      {/* HERO SECTION */}
+    <div style={{ fontFamily: "Georgia, serif" }}>
+      {/* NAV */}
+      <nav
+        style={{
+          padding: "20px 40px",
+          borderBottom: "1px solid #e5e7eb",
+          background: "#ffffff",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            display: "flex",
+            gap: "24px",
+            fontSize: "16px",
+          }}
+        >
+          <a href="/" style={{ textDecoration: "none" }}>Beyond Health Systems</a>
+          <a href="/platform" style={{ textDecoration: "none" }}>Platform</a>
+          <a href="/beyond-claims" style={{ textDecoration: "none" }}>Beyond-Claims</a>
+          <a href="/beyond-truth" style={{ textDecoration: "none" }}>Beyond-Truth</a>
+          <a href="/pricing" style={{ textDecoration: "none" }}>Pricing</a>
+          <a href="/contact" style={{ textDecoration: "none" }}>Contact</a>
+        </div>
+      </nav>
+
+      {/* HERO */}
       <section
         style={{
           position: "relative",
@@ -9,9 +35,10 @@ export default function Home() {
           backgroundImage: "url('/images/hero-background-light.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
-        {/* Light overlay for readability */}
+        {/* LIGHT OVERLAY */}
         <div
           style={{
             position: "absolute",
@@ -20,22 +47,22 @@ export default function Home() {
           }}
         />
 
-        {/* Hero content */}
+        {/* HERO CONTENT */}
         <div
           style={{
             position: "relative",
             zIndex: 1,
             maxWidth: "1100px",
             margin: "0 auto",
-            padding: "120px 40px",
+            padding: "140px 40px",
           }}
         >
           <h1
             style={{
-              fontSize: "44px",
+              fontSize: "46px",
               fontWeight: 700,
               lineHeight: 1.2,
-              marginBottom: "24px",
+              marginBottom: "28px",
               color: "#0f172a",
             }}
           >
@@ -45,7 +72,7 @@ export default function Home() {
           <p
             style={{
               fontSize: "20px",
-              maxWidth: "820px",
+              maxWidth: "860px",
               lineHeight: 1.6,
               color: "#334155",
               marginBottom: "28px",
@@ -59,7 +86,7 @@ export default function Home() {
           <p
             style={{
               fontSize: "18px",
-              maxWidth: "820px",
+              maxWidth: "860px",
               lineHeight: 1.6,
               color: "#334155",
             }}
@@ -71,6 +98,25 @@ export default function Home() {
           </p>
         </div>
       </section>
-    </>
+
+      {/* BODY PLACEHOLDER */}
+      <section
+        style={{
+          padding: "80px 40px",
+          background: "#ffffff",
+        }}
+      >
+        <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "32px", marginBottom: "16px" }}>
+            Deterministic Recovery at Scale
+          </h2>
+          <p style={{ fontSize: "18px", color: "#334155", maxWidth: "800px" }}>
+            Paid claims. Denied claims. Underpayments hidden in plain sight.
+            Beyond-Claims continuously audits outcomes and corrects what legacy
+            workflows were never designed to revisit.
+          </p>
+        </div>
+      </section>
+    </div>
   );
 }
