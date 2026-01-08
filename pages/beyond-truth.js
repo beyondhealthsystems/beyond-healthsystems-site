@@ -43,9 +43,16 @@ export default function BeyondTruth() {
       textDecoration: "none",
       fontWeight: 600,
     },
+
+    /* HERO with background */
     hero: {
       padding: "84px 0 46px",
+      backgroundImage: "url('/images/hero-background-light.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
     },
+
     h1: {
       fontFamily: "Georgia, serif",
       fontSize: 48,
@@ -126,9 +133,7 @@ export default function BeyondTruth() {
       {/* HERO */}
       <section style={styles.hero}>
         <div style={styles.container}>
-          <h1 style={styles.h1}>
-            Beyond-Truth
-          </h1>
+          <h1 style={styles.h1}>Beyond-Truth</h1>
 
           <p style={styles.lead}>
             Beyond-Truth is the audit-first proof layer of the Beyond platform —
@@ -139,7 +144,9 @@ export default function BeyondTruth() {
           <p style={styles.lead}>
             It answers one critical question with precision:
             <br />
-            <strong>What revenue are we actually leaving behind — and why?</strong>
+            <strong>
+              What revenue are we actually leaving behind — and why?
+            </strong>
           </p>
 
           <div style={styles.mediaCard}>
@@ -149,7 +156,8 @@ export default function BeyondTruth() {
               alt="Audit analytics showing paid, denied, and recoverable revenue"
             />
             <div style={styles.caption}>
-              Executive audit visibility across paid, denied, and recoverable claims.
+              Executive audit visibility across paid, denied, and recoverable
+              claims.
             </div>
           </div>
         </div>
