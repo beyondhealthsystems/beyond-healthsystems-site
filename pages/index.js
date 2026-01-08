@@ -1,4 +1,4 @@
-// /pages/index.js
+// pages/index.js
 
 export default function Home() {
   const styles = {
@@ -22,7 +22,7 @@ export default function Home() {
       zIndex: 50,
       background: "rgba(255,255,255,0.92)",
       backdropFilter: "blur(8px)",
-      borderBottom: "1px solid rgba(15, 23, 42, 0.08)",
+      borderBottom: "1px solid rgba(15,23,42,0.08)",
     },
 
     nav: {
@@ -82,25 +82,46 @@ export default function Home() {
     },
 
     section: {
-      padding: "48px 0",
-      borderTop: "1px solid rgba(15, 23, 42, 0.08)",
+      padding: "56px 0",
+      borderTop: "1px solid rgba(15,23,42,0.08)",
     },
 
     sectionTitle: {
-      fontSize: 28,
-      marginBottom: 10,
+      fontSize: 30,
+      marginBottom: 12,
+      letterSpacing: "-0.01em",
     },
 
     p: {
       fontSize: 16,
       lineHeight: 1.65,
-      maxWidth: 900,
+      maxWidth: 920,
       marginBottom: 12,
+    },
+
+    mediaCard: {
+      border: "1px solid rgba(15,23,42,0.10)",
+      borderRadius: 14,
+      overflow: "hidden",
+      background: "#fff",
+      boxShadow: "0 10px 30px rgba(15,23,42,0.06)",
+      marginTop: 20,
+    },
+
+    img: {
+      width: "100%",
+      display: "block",
+    },
+
+    caption: {
+      padding: "12px 14px",
+      fontSize: 14,
+      color: "#334155",
     },
 
     footer: {
       padding: "32px 0",
-      borderTop: "1px solid rgba(15, 23, 42, 0.08)",
+      borderTop: "1px solid rgba(15,23,42,0.08)",
       fontSize: 13,
       color: "#475569",
     },
@@ -116,6 +137,7 @@ export default function Home() {
             <div style={styles.navLinks}>
               <a style={styles.a} href="/platform">Platform</a>
               <a style={styles.a} href="/beyond-claims">Beyond-Claims</a>
+              <a style={styles.a} href="/beyond-truth">Beyond-Truth</a>
               <a style={styles.a} href="/pricing">Pricing</a>
               <a style={styles.a} href="/contact">Contact</a>
             </div>
@@ -132,16 +154,14 @@ export default function Home() {
             </h1>
 
             <p style={styles.lead}>
-              The healthcare revenue cycle was built to post money —
-              not to verify correctness. That assumption quietly costs
-              hospitals millions every year.
+              The healthcare revenue cycle was built to post money — not to verify
+              correctness. That assumption quietly costs hospitals millions every year.
             </p>
 
             <p style={styles.sub}>
-              Beyond-Claims continuously audits paid and denied claims,
-              corrects misadjudication at the service-line level, and
-              recovers revenue previously left behind — with payment
-              only when you actually collect.
+              Beyond-Claims continuously audits paid and denied claims, corrects
+              misadjudication at the service-line level, and recovers revenue
+              previously left behind — with payment only when you actually collect.
             </p>
           </div>
         </div>
@@ -152,10 +172,34 @@ export default function Home() {
         <div style={styles.container}>
           <h2 style={styles.sectionTitle}>The Platform</h2>
           <p style={styles.p}>
-            Deterministic audit technology that identifies recoverable
-            revenue across paid and denied claims — automatically,
-            continuously, and at scale.
+            We quantify your exact recovery opportunity through deterministic,
+            line-level audit — across both paid and denied claims.
           </p>
+
+          <div style={styles.mediaCard}>
+            <img style={styles.img} src="/images/audit-dashboard.jpg" />
+            <div style={styles.caption}>
+              Audit visibility across paid, denied, corrected, and recovered claims.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* BEYOND-CLAIMS */}
+      <section style={styles.section}>
+        <div style={styles.container}>
+          <h2 style={styles.sectionTitle}>Beyond-Claims</h2>
+          <p style={styles.p}>
+            Beyond-Claims focuses on silent underpayments, contract drift, and
+            line-item errors that traditional RCM workflows never surface.
+          </p>
+
+          <div style={styles.mediaCard}>
+            <img style={styles.img} src="/images/claims-engine.png" />
+            <div style={styles.caption}>
+              Deterministic rules engine operating at service-line precision.
+            </div>
+          </div>
         </div>
       </section>
 
@@ -187,7 +231,6 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* RESPONSIVE */}
       <style>{`
         @media (max-width: 720px) {
           h1 { font-size: 40px !important; }
