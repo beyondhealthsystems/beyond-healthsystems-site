@@ -20,9 +20,9 @@ export default function Home() {
           recovery. That limitation is over.
         </p>
 
-        {/* IMAGE 1 — BOARDROOM */}
+        {/* IMAGE 1 — HERO BOARDROOM (PNG) */}
         <img
-          src="/images/hero-boardroom.jpg"
+          src="/images/hero-boardroom.png"
           alt="Hospital leadership reviewing positive recovered revenue results"
           style={{
             width: "100%",
@@ -72,65 +72,3 @@ export default function Home() {
         </p>
 
         <p style={{ marginTop: 16, fontWeight: 600 }}>
-          We quantify your exact recovery opportunity by audit — claim by claim,
-          service line by line.
-        </p>
-      </section>
-
-      {/* WHAT MAKES THIS DIFFERENT */}
-      <section style={{ marginBottom: 80 }}>
-        <h2>What makes this different</h2>
-        <h3>Deterministic. Auditable. Executable.</h3>
-
-        {/* IMAGE 3 — FUTURE ENGINE */}
-        <img
-          src="/images/future-engine.jpg"
-          alt="Advanced deterministic technology processing healthcare claims and denials"
-          style={{
-            width: "100%",
-            borderRadius: 10,
-            margin: "24px 0",
-          }}
-        />
-
-        <p style={{ fontSize: 16, color: "#444" }}>
-          Autonomous, deterministic technology continuously processing paid and
-          denied claims — validating outcomes and executing corrections at
-          machine scale.
-        </p>
-
-        <p style={{ fontSize: 18, marginTop: 16 }}>
-          Beyond-Claims does not predict outcomes. It{" "}
-          <strong>verifies errors and executes recovery</strong>.
-        </p>
-      </section>
-
-      {/* WHAT THIS ENABLES */}
-      <section style={{ marginBottom: 80 }}>
-        <h2>What this enables</h2>
-
-        {/* IMAGE 4 — CLINICAL TRAINING */}
-        <img
-          src="/images/clinical-training.jpg"
-          alt="New nurses and doctors training in a hospital emergency department"
-          style={{
-            width: "100%",
-            borderRadius: 10,
-            margin: "24px 0",
-          }}
-        />
-
-        <p style={{ fontSize: 16, color: "#444" }}>
-          Recovered revenue reinvested into staffing, training, and clinical
-          capacity — directly improving patient care.
-        </p>
-
-        <p style={{ fontSize: 18, marginTop: 16 }}>
-          This isn’t new revenue.{" "}
-          <strong>It’s earned revenue returned.</strong>
-        </p>
-      </section>
-
-    </main>
-  );
-}
