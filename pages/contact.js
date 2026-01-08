@@ -45,9 +45,15 @@ export default function Contact() {
       fontWeight: 600,
     },
 
+    /* HERO with background */
     hero: {
       padding: "88px 0 48px",
+      backgroundImage: "url('/images/hero-background-light.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
     },
+
     h1: {
       fontFamily: "Georgia, serif",
       fontSize: 46,
@@ -155,7 +161,7 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* IMAGE */}
+      {/* IMAGE + CONTACT */}
       <section style={styles.section}>
         <div style={styles.container}>
           <div style={styles.mediaCard}>
