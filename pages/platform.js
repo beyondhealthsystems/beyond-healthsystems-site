@@ -46,15 +46,13 @@ export default function Platform() {
       fontWeight: 600,
     },
 
-    /* HERO — background added safely */
+    /* HERO WITH BACKGROUND */
     hero: {
-      padding: "84px 0 46px",
-      backgroundImage:
-        "linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)), url('/images/hero-background-light.png')",
+      padding: "84px 0 56px",
+      backgroundImage: "url('/images/hero-background-light.png')",
       backgroundSize: "cover",
       backgroundPosition: "center",
     },
-
     h1: {
       fontFamily: "Georgia, serif",
       fontSize: 48,
@@ -69,6 +67,7 @@ export default function Platform() {
       marginBottom: 18,
     },
 
+    /* SECTIONS */
     section: {
       padding: "42px 0",
       borderTop: "1px solid rgba(15, 23, 42, 0.08)",
@@ -90,6 +89,7 @@ export default function Platform() {
       maxWidth: 900,
     },
 
+    /* MEDIA */
     mediaCard: {
       marginTop: 22,
       border: "1px solid rgba(15, 23, 42, 0.10)",
@@ -108,6 +108,7 @@ export default function Platform() {
       color: "#334155",
     },
 
+    /* FOOTER */
     footer: {
       padding: "30px 0 40px",
       borderTop: "1px solid rgba(15, 23, 42, 0.08)",
@@ -161,14 +162,16 @@ export default function Platform() {
         </div>
       </section>
 
-      {/* REST OF PAGE — UNCHANGED */}
+      {/* WHAT IT AUDITS */}
       <section style={styles.section}>
         <div style={styles.container}>
           <h2 style={styles.h2}>What the Platform Audits</h2>
+
           <p style={styles.p}>
             The platform evaluates both denied and paid claims without relying on
             sampling, thresholds, or assumptions once payment posts.
           </p>
+
           <ul style={styles.bullets}>
             <li>Fully denied claims</li>
             <li>Partially paid claims</li>
@@ -179,13 +182,16 @@ export default function Platform() {
         </div>
       </section>
 
+      {/* WHY ERRORS PERSIST */}
       <section style={styles.section}>
         <div style={styles.container}>
           <h2 style={styles.h2}>Why Errors Persist After Payment</h2>
+
           <p style={styles.p}>
             Most revenue leakage occurs not because denials are ignored, but
             because paid claims are assumed to be correct.
           </p>
+
           <p style={styles.p}>
             Contract misapplication, modifier logic, bundling errors, and policy
             changes often affect only portions of a claim — allowing errors to
@@ -194,13 +200,16 @@ export default function Platform() {
         </div>
       </section>
 
+      {/* HOW IT WORKS */}
       <section style={styles.section}>
         <div style={styles.container}>
           <h2 style={styles.h2}>How Beyond Evaluates Claims</h2>
+
           <p style={styles.p}>
             Beyond uses deterministic, rule-based logic — not probabilistic AI —
             to ensure every outcome is auditable, explainable, and defensible.
           </p>
+
           <ul style={styles.bullets}>
             <li>Service-line level adjudication review</li>
             <li>Repeatable rule enforcement</li>
@@ -210,13 +219,16 @@ export default function Platform() {
         </div>
       </section>
 
+      {/* OUTPUT */}
       <section style={styles.section}>
         <div style={styles.container}>
           <h2 style={styles.h2}>What Clients Receive</h2>
+
           <p style={styles.p}>
             The platform delivers governed financial outcomes — not theoretical
             insights.
           </p>
+
           <ul style={styles.bullets}>
             <li>Verified recovery opportunity by payer and service line</li>
             <li>Recovery tracking through payment confirmation</li>
