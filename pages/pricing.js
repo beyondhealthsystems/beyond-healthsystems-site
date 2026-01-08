@@ -44,9 +44,15 @@ export default function Pricing() {
       fontWeight: 600,
     },
 
+    /* HERO with background */
     hero: {
       padding: "84px 0 42px",
+      backgroundImage: "url('/images/hero-background-light.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
     },
+
     h1: {
       fontFamily: "Georgia, serif",
       fontSize: 48,
@@ -160,7 +166,6 @@ export default function Pricing() {
             />
           </div>
 
-          {/* ECONOMICS PARAGRAPH — ADDED BACK */}
           <p style={{ ...styles.p, marginTop: 18 }}>
             With current RCM processes, hospitals often net <b>$740M–$780M</b> on{" "}
             <b>$1B</b> in claims after short pays, fees, and abandonment. With{" "}
@@ -171,7 +176,6 @@ export default function Pricing() {
             <b>over $140M more</b> on the same <b>$1B</b> in claims.
           </p>
 
-          {/* PRICING BLOCK — UNCHANGED */}
           <div style={styles.priceCard}>
             <p style={styles.p}>
               <b>Pricing aligned to outcomes, auditability, and non-interference.</b>
