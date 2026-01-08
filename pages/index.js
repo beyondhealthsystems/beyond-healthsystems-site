@@ -3,9 +3,15 @@
 export default function Home() {
   return (
     <main style={{ maxWidth: 1100, margin: "0 auto", padding: "120px 40px" }}>
-      {/* TOP LINE OPENER */}
-      <section style={{ marginBottom: 60 }}>
-        <p style={{ fontSize: 20, fontWeight: 500 }}>
+
+      {/* HERO */}
+      <section style={{ marginBottom: 80 }}>
+        <h1 style={{ fontSize: 42, marginBottom: 16 }}>
+          A real claims recovery solution — with zero financial risk.
+        </h1>
+
+        {/* MOVED OPENER — NOW CORRECTLY PLACED */}
+        <p style={{ fontSize: 20, fontWeight: 500, marginBottom: 24 }}>
           <strong>
             Healthcare leaders: the era of payers quietly keeping your earned
             dollars is ending.
@@ -14,13 +20,6 @@ export default function Home() {
           RCM workflows optimized posting and exceptions — not continuous
           recovery. That limitation is over.
         </p>
-      </section>
-
-      {/* HERO */}
-      <section style={{ marginBottom: 80 }}>
-        <h1 style={{ fontSize: 42, marginBottom: 20 }}>
-          A real claims recovery solution — with zero financial risk.
-        </h1>
 
         <p style={{ fontSize: 18, maxWidth: 900 }}>
           Powered by <strong>Beyond-Claims</strong>, a{" "}
@@ -162,10 +161,6 @@ export default function Home() {
       {/* WHAT THIS ENABLES */}
       <section style={{ marginBottom: 80 }}>
         <h2>What this enables</h2>
-
-        <p style={{ fontSize: 18 }}>
-          Recovered revenue isn’t theoretical. It funds:
-        </p>
 
         <ul style={{ fontSize: 17 }}>
           <li>Nurse retention and staffing stability</li>
