@@ -20,55 +20,83 @@ export default function Home() {
           recovery. That limitation is over.
         </p>
 
-        {/* IMAGE 1 — HERO BOARDROOM (PNG) */}
+        {/* IMAGE 1 — BOARDROOM */}
         <img
-          src="/images/hero-boardroom.png"
-          alt="Hospital leadership reviewing positive recovered revenue results"
-          style={{
-            width: "100%",
-            borderRadius: 10,
-            marginBottom: 16,
-          }}
+          src="/images/boardroom-revenue.jpg"
+          alt="Hospital leadership reviewing recovered revenue results"
+          style={{ width: "100%", borderRadius: 10, marginBottom: 16 }}
         />
 
         <p style={{ fontSize: 16, color: "#444", marginBottom: 32 }}>
-          Hospital leadership reviewing confirmed recovered revenue — real
-          dollars returned to the operating budget.
+          Confirmed recovered revenue — returned to the operating budget and
+          reinvested into care delivery.
         </p>
 
-        <p style={{ fontSize: 18, maxWidth: 900 }}>
-          Powered by <strong>Beyond-Claims</strong>, a{" "}
-          <strong>deterministic</strong> recovery engine (not probabilistic AI).
-          No upfront cost. No consulting fees.{" "}
+        <p style={{ fontSize: 18 }}>
+          Powered by <strong>Beyond-Claims</strong>, a deterministic recovery
+          engine. No upfront cost. No consulting fees.{" "}
           <strong>Payment only on recovered dollars.</strong>
         </p>
       </section>
 
-      {/* SCALE OF THE PROBLEM */}
+      {/* AUDIT / SCALE */}
       <section style={{ marginBottom: 80 }}>
         <h2>The scale of the problem</h2>
 
-        <p style={{ fontSize: 18, maxWidth: 950 }}>
+        <p style={{ fontSize: 18 }}>
           At roughly <strong>$2.9T</strong> in claims-based provider spend, even a{" "}
           <strong>~14–15% initial denial rate</strong> means hundreds of billions
-          of dollars enter denial workflows each year — while many “paid” claims
-          still contain underpayments that never get reworked.
+          of dollars enter denial workflows — while many underpayments are never
+          reworked.
         </p>
 
         {/* IMAGE 2 — AUDIT DASHBOARD */}
         <img
           src="/images/audit-dashboard.jpg"
-          alt="Claims audit dashboard showing denied, paid, in-process, and recovered claims"
-          style={{
-            width: "100%",
-            borderRadius: 10,
-            margin: "24px 0",
-          }}
+          alt="Claims audit dashboard showing denied, paid, and recovered claims"
+          style={{ width: "100%", borderRadius: 10, margin: "24px 0" }}
         />
 
-        <p style={{ fontSize: 16, color: "#444" }}>
-          Claim-state audit view showing denied, paid, in-process, and recovered
-          claims with measurable success rates.
+        <p style={{ fontWeight: 600 }}>
+          We quantify your exact recovery opportunity by audit — claim by claim,
+          service line by line.
         </p>
+      </section>
 
-        <p style={{ marginTop: 16, fontWeight: 600 }}>
+      {/* ENGINE */}
+      <section style={{ marginBottom: 80 }}>
+        <h2>Deterministic. Auditable. Executable.</h2>
+
+        {/* IMAGE 3 — CLAIMS ENGINE */}
+        <img
+          src="/images/claims-engine.jpg"
+          alt="Deterministic engine processing healthcare claims and denials"
+          style={{ width: "100%", borderRadius: 10, margin: "24px 0" }}
+        />
+
+        <p style={{ fontSize: 18 }}>
+          Autonomous technology continuously evaluating paid and denied claims —
+          validating outcomes and executing recovery at machine scale.
+        </p>
+      </section>
+
+      {/* OUTCOMES */}
+      <section style={{ marginBottom: 80 }}>
+        <h2>What this enables</h2>
+
+        {/* IMAGE 4 — CLINICAL TRAINING */}
+        <img
+          src="/images/clinical-training.jpg"
+          alt="Doctors and nurses training with expanded hospital capacity"
+          style={{ width: "100%", borderRadius: 10, margin: "24px 0" }}
+        />
+
+        <p style={{ fontSize: 18 }}>
+          Earned revenue returned — reinvested into staffing, training,
+          equipment, and patient care.
+        </p>
+      </section>
+
+    </main>
+  );
+}
