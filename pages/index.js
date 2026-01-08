@@ -45,7 +45,7 @@ export default function Home() {
       fontWeight: 600,
     },
 
-    /* HERO — ONLY CHANGE IS HERE */
+    /* HERO — background added safely */
     hero: {
       padding: "84px 0 40px",
       backgroundImage: "url('/images/hero-background-light.png')",
@@ -66,14 +66,12 @@ export default function Home() {
       lineHeight: 1.6,
       maxWidth: 820,
       margin: "0 0 14px 0",
-      color: "#0f172a",
     },
     sub: {
       fontSize: 18,
       lineHeight: 1.6,
       maxWidth: 860,
       margin: 0,
-      color: "#0f172a",
     },
 
     section: {
@@ -89,7 +87,6 @@ export default function Home() {
       fontSize: 16,
       lineHeight: 1.65,
       margin: "0 0 12px 0",
-      color: "#0f172a",
       maxWidth: 920,
     },
 
@@ -122,38 +119,8 @@ export default function Home() {
     bullets: {
       margin: "10px 0 0 18px",
       padding: 0,
-      color: "#0f172a",
       lineHeight: 1.7,
       maxWidth: 920,
-    },
-
-    ctaRow: {
-      display: "flex",
-      gap: 12,
-      flexWrap: "wrap",
-      marginTop: 16,
-    },
-    buttonPrimary: {
-      background: "#16a34a",
-      color: "#ffffff",
-      border: "none",
-      borderRadius: 10,
-      padding: "10px 14px",
-      fontWeight: 700,
-      cursor: "pointer",
-      textDecoration: "none",
-      display: "inline-block",
-    },
-    buttonSecondary: {
-      background: "transparent",
-      color: "#1e3a8a",
-      border: "1px solid rgba(30, 58, 138, 0.35)",
-      borderRadius: 10,
-      padding: "10px 14px",
-      fontWeight: 700,
-      cursor: "pointer",
-      textDecoration: "none",
-      display: "inline-block",
     },
 
     footer: {
@@ -171,7 +138,6 @@ export default function Home() {
         <div style={styles.container}>
           <div style={styles.nav}>
             <div style={styles.navLeft}>Beyond Health Systems</div>
-
             <div style={styles.navLinks}>
               <a style={styles.a} href="#platform">Platform</a>
               <a style={styles.a} href="#beyond-claims">Beyond-Claims</a>
@@ -189,44 +155,90 @@ export default function Home() {
           <h1 style={styles.h1}>
             A Real Claims Recovery Solution — With Zero Financial Risk
           </h1>
-
           <p style={styles.lead}>
             Healthcare leaders: the era of payers quietly keeping your earned
-            dollars is ending. RCM workflows optimized posting and exceptions —
-            not continuous recovery. That limitation is over.
+            dollars is ending.
           </p>
-
           <p style={styles.sub}>
-            Beyond-Claims is a deterministic recovery engine that audits paid and
-            denied claims line-by-line, corrects what was misadjudicated, and
-            recovers revenue previously left behind — with no upfront cost and
-            payment only on dollars actually collected.
+            Beyond-Claims audits paid and denied claims line-by-line and
+            recovers revenue previously left behind.
           </p>
 
-          {/* HERO IMAGE (UNCHANGED) */}
           <div style={{ marginTop: 22 }}>
             <div style={styles.mediaCard}>
-              <img
-                style={styles.img}
-                src="/images/boardroom-revenue.png"
-                alt="Hospital leadership reviewing recovered revenue results"
-              />
+              <img style={styles.img} src="/images/boardroom-revenue.png" />
               <div style={styles.imgCaption}>
-                Leadership alignment: recovered dollars show up as operating
-                capacity — immediately.
+                Leadership alignment through recovered revenue.
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* EVERYTHING ELSE BELOW IS UNCHANGED */}
       {/* PLATFORM */}
+      <section id="platform" style={styles.section}>
+        <div style={styles.container}>
+          <h2 style={styles.sectionTitle}>The Platform</h2>
+          <div style={styles.mediaCard}>
+            <img style={styles.img} src="/images/audit-dashboard.jpg" />
+            <div style={styles.imgCaption}>
+              Audit visibility across paid, denied, and recovered claims.
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* BEYOND-CLAIMS */}
+      <section id="beyond-claims" style={styles.section}>
+        <div style={styles.container}>
+          <h2 style={styles.sectionTitle}>Beyond-Claims</h2>
+          <div style={styles.mediaCard}>
+            <img style={styles.img} src="/images/claims-engine.png" />
+            <div style={styles.imgCaption}>
+              Deterministic service-line recovery engine.
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* BEYOND-TRUTH */}
+      <section id="beyond-truth" style={styles.section}>
+        <div style={styles.container}>
+          <h2 style={styles.sectionTitle}>Beyond-Truth</h2>
+          <div style={styles.mediaCard}>
+            <img style={styles.img} src="/images/clinical-training.jpg" />
+            <div style={styles.imgCaption}>
+              Recovered revenue funds staffing and care.
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PRICING */}
+      <section id="pricing" style={styles.section}>
+        <div style={styles.container}>
+          <h2 style={styles.sectionTitle}>Pricing</h2>
+          <p style={styles.p}>
+            No recovery. No cost. We only get paid when you collect.
+          </p>
+        </div>
+      </section>
+
       {/* CONTACT */}
+      <section id="contact" style={styles.section}>
+        <div style={styles.container}>
+          <p style={styles.p}>
+            <b>steven@beyond-ai.com</b> | <b>847-791-7838</b>
+          </p>
+        </div>
+      </section>
+
       {/* FOOTER */}
+      <div style={styles.footer}>
+        <div style={styles.container}>
+          © {new Date().getFullYear()} Beyond Health Systems
+        </div>
+      </div>
     </main>
   );
 }
