@@ -164,31 +164,7 @@ const isMobile =
 
   return (
     <main style={styles.page}>
-      {/* NAV */}
-      <div style={styles.navWrap}>
-        <div style={styles.container}>
-          <div style={styles.nav}>
-  <div style={styles.navLeft}>Beyond Health Systems</div>
-
-  <button
-  style={styles.menuButton}
-  onClick={() => setMenuOpen(!menuOpen)}
->
-  Menu
-</button>
-
-
-  <div style={styles.navLinks}>
-
-              <a style={styles.a} href="#platform">Platform</a>
-              <a style={styles.a} href="#beyond-claims">Beyond-Claims</a>
-              <a style={styles.a} href="#beyond-truth">Beyond-Truth</a>
-              <a style={styles.a} href="#pricing">Pricing</a>
-              <a style={styles.a} href="#contact">Contact</a>
-            </div>
-          </div>
-        </div>
-      </div>
+     
 
       {/* HERO */}
       <section style={styles.hero}>
