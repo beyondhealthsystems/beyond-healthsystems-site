@@ -39,6 +39,17 @@ export default function Home() {
       justifyContent: "flex-end",
       fontSize: 14,
     },
+    menuButton: {
+  display: isMobile ? "block" : "none",
+  background: "transparent",
+  border: "1px solid rgba(15, 23, 42, 0.18)",
+  borderRadius: 10,
+  padding: "8px 10px",
+  fontWeight: 700,
+  cursor: "pointer",
+  color: "#1e3a8a",
+},
+
     a: {
       color: "#1e3a8a",
       textDecoration: "none",
@@ -143,6 +154,8 @@ export default function Home() {
       fontSize: 13,
     },
   };
+const isMobile =
+  typeof window !== "undefined" && window.innerWidth <= 768;
 
   return (
     <main style={styles.page}>
