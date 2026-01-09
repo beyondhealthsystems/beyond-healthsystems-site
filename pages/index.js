@@ -169,7 +169,13 @@ const isMobile =
           <div style={styles.nav}>
   <div style={styles.navLeft}>Beyond Health Systems</div>
 
-  <button style={styles.menuButton}>Menu</button>
+  <button
+  style={styles.menuButton}
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  Menu
+</button>
+
 
   <div style={styles.navLinks}>
 
