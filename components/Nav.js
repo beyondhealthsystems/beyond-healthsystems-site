@@ -43,7 +43,7 @@ export default function Nav() {
       whiteSpace: "nowrap",
     },
     navLinks: {
-      display: isMobile ? "none" : "flex",
+      display: "flex",
       gap: 18,
       flexWrap: "wrap",
       justifyContent: "flex-end",
@@ -56,7 +56,6 @@ export default function Nav() {
       fontWeight: 600,
     },
     menuButton: {
-      display: isMobile ? "block" : "none",
       background: "transparent",
       border: "1px solid rgba(15, 23, 42, 0.18)",
       borderRadius: 10,
@@ -67,7 +66,6 @@ export default function Nav() {
       lineHeight: 1,
     },
     mobileMenu: {
-      display: isMobile && menuOpen ? "block" : "none",
       padding: "10px 0 14px",
       borderTop: "1px solid rgba(15, 23, 42, 0.08)",
     },
@@ -96,35 +94,41 @@ export default function Nav() {
         <div style={styles.nav}>
           <div style={styles.navLeft}>Beyond Health Systems</div>
 
-          <button
-            style={styles.menuButton}
-            onClick={() => setMenuOpen((v) => !v)}
-            aria-label="Open menu"
-          >
-            Menu
-          </button>
+          {!isMobile && (
+            <div style={styles.navLinks}>
+              {links.map((l) => (
+                <a key={l.href} style={styles.a} href={l.href}>
+                  {l.label}
+                </a>
+              ))}
+            </div>
+          )}
 
-          <div style={styles.navLinks}>
+          {isMobile && (
+            <button
+              style={styles.menuButton}
+              onClick={() => setMenuOpen((v) => !v)}
+              aria-label="Open menu"
+            >
+              Menu
+            </button>
+          )}
+        </div>
+
+        {isMobile && menuOpen && (
+          <div style={styles.mobileMenu}>
             {links.map((l) => (
-              <a key={l.href} style={styles.a} href={l.href}>
+              <a
+                key={l.href}
+                style={styles.mobileLink}
+                href={l.href}
+                onClick={() => setMenuOpen(false)}
+              >
                 {l.label}
               </a>
             ))}
           </div>
-        </div>
-
-        <div style={styles.mobileMenu}>
-          {links.map((l) => (
-            <a
-              key={l.href}
-              style={styles.mobileLink}
-              href={l.href}
-              onClick={() => setMenuOpen(false)}
-            >
-              {l.label}
-            </a>
-          ))}
-        </div>
+        )}
       </div>
     </div>
   );
