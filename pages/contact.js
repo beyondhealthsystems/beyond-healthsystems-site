@@ -174,8 +174,10 @@ export default function Contact() {
 
           <div style={styles.contactBlock}>
             <p>
-              <b>Email:</b> steven@beyond-claims.com
-              <br />
+              <b>Email:</b>{" "}
+<a href="mailto:steven@beyond-claims.com">steven@beyond-claims.com</a>,{" "}
+<a href="mailto:support@beyond-claims.com">support@beyond-claims.com</a>
+<br />
               
             </p>
 
