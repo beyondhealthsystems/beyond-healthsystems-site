@@ -1,3 +1,4 @@
+import Head from "next/head";
 export default function Home() {
   const styles = {
     page: {
@@ -145,6 +146,9 @@ export default function Home() {
   };
 
   return (
+   <Head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</Head>
     <main style={styles.page}>
       {/* NAV */}
       <div style={styles.navWrap}>
