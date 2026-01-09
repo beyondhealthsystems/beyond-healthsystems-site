@@ -176,7 +176,7 @@ export default function Contact() {
             <p>
               <b>Email:</b>{" "}
 <a href="mailto:steven@beyond-claims.com">steven@beyond-claims.com</a>,{" "}
-<a href="mailto:support@beyond-claims.com">support@beyond-claims.com</a>
+<a href="mailto:support@beyond-claims.com">tbrne@beyond-claims.com</a>
 <br />
               
             </p>
