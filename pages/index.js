@@ -1,4 +1,9 @@
 export default function Home() {
+const isMobile =
+  typeof window !== "undefined" && window.innerWidth <= 768;
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
+
   const styles = {
     page: {
       fontFamily:
@@ -33,12 +38,13 @@ export default function Home() {
       fontSize: 16,
     },
     navLinks: {
-      display: "flex",
-      gap: 18,
-      flexWrap: "wrap",
-      justifyContent: "flex-end",
-      fontSize: 14,
-    },
+  display: isMobile ? "none" : "flex",
+  gap: 18,
+  flexWrap: "wrap",
+  justifyContent: "flex-end",
+  fontSize: 14,
+},
+
     menuButton: {
   display: isMobile ? "block" : "none",
   background: "transparent",
@@ -163,8 +169,12 @@ const isMobile =
       <div style={styles.navWrap}>
         <div style={styles.container}>
           <div style={styles.nav}>
-            <div style={styles.navLeft}>Beyond Health Systems</div>
-            <div style={styles.navLinks}>
+  <div style={styles.navLeft}>Beyond Health Systems</div>
+
+  <button style={styles.menuButton}>Menu</button>
+
+  <div style={styles.navLinks}>
+
               <a style={styles.a} href="#platform">Platform</a>
               <a style={styles.a} href="#beyond-claims">Beyond-Claims</a>
               <a style={styles.a} href="#beyond-truth">Beyond-Truth</a>
