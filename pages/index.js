@@ -148,6 +148,8 @@ export default function Home() {
 
   return (
     <main style={styles.page}>
+    <Nav />
+
     
       {/* HERO */}
       <section style={styles.hero}>
