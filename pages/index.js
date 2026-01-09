@@ -1,10 +1,4 @@
-import React from "react";
 export default function Home() {
-const isMobile =
-  typeof window !== "undefined" && window.innerWidth <= 768;
-  const [menuOpen, setMenuOpen] = React.useState(false);
-
-
   const styles = {
     page: {
       fontFamily:
@@ -39,24 +33,12 @@ const isMobile =
       fontSize: 16,
     },
     navLinks: {
-  display: isMobile ? "none" : "flex",
-  gap: 18,
-  flexWrap: "wrap",
-  justifyContent: "flex-end",
-  fontSize: 14,
-},
-
-    menuButton: {
-  display: isMobile ? "block" : "none",
-  background: "transparent",
-  border: "1px solid rgba(15, 23, 42, 0.18)",
-  borderRadius: 10,
-  padding: "8px 10px",
-  fontWeight: 700,
-  cursor: "pointer",
-  color: "#1e3a8a",
-},
-
+      display: "flex",
+      gap: 18,
+      flexWrap: "wrap",
+      justifyContent: "flex-end",
+      fontSize: 14,
+    },
     a: {
       color: "#1e3a8a",
       textDecoration: "none",
@@ -164,7 +146,21 @@ const isMobile =
 
   return (
     <main style={styles.page}>
-     
+      {/* NAV */}
+      <div style={styles.navWrap}>
+        <div style={styles.container}>
+          <div style={styles.nav}>
+            <div style={styles.navLeft}>Beyond Health Systems</div>
+            <div style={styles.navLinks}>
+              <a style={styles.a} href="#platform">Platform</a>
+              <a style={styles.a} href="#beyond-claims">Beyond-Claims</a>
+              <a style={styles.a} href="#beyond-truth">Beyond-Truth</a>
+              <a style={styles.a} href="#pricing">Pricing</a>
+              <a style={styles.a} href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* HERO */}
       <section style={styles.hero}>
