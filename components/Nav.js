@@ -1,4 +1,20 @@
+import { useEffect, useState } from "react";
+
 export default function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const onResize = () => {
+      const mobile = window.innerWidth <= 768;
+      setIsMobile(mobile);
+      if (!mobile) setMenuOpen(false);
+    };
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
   const styles = {
     navWrap: {
       position: "sticky",
@@ -17,42 +33,97 @@ export default function Nav() {
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
-      gap: 16,
+      gap: 12,
       padding: "14px 0",
     },
     navLeft: {
       fontWeight: 700,
       letterSpacing: "-0.02em",
       fontSize: 16,
-      color: "#0f172a",
+      whiteSpace: "nowrap",
     },
     navLinks: {
-      display: "flex",
+      display: isMobile ? "none" : "flex",
       gap: 18,
       flexWrap: "wrap",
       justifyContent: "flex-end",
       fontSize: 14,
+      alignItems: "center",
     },
     a: {
       color: "#1e3a8a",
       textDecoration: "none",
       fontWeight: 600,
     },
+    menuButton: {
+      display: isMobile ? "block" : "none",
+      background: "transparent",
+      border: "1px solid rgba(15, 23, 42, 0.18)",
+      borderRadius: 10,
+      padding: "8px 10px",
+      fontWeight: 700,
+      cursor: "pointer",
+      color: "#1e3a8a",
+      lineHeight: 1,
+    },
+    mobileMenu: {
+      display: isMobile && menuOpen ? "block" : "none",
+      padding: "10px 0 14px",
+      borderTop: "1px solid rgba(15, 23, 42, 0.08)",
+    },
+    mobileLink: {
+      display: "block",
+      padding: "10px 0",
+      color: "#1e3a8a",
+      textDecoration: "none",
+      fontWeight: 700,
+      fontSize: 14,
+    },
   };
+
+  const links = [
+    { href: "/", label: "Home" },
+    { href: "/platform", label: "Platform" },
+    { href: "/beyond-claims", label: "Beyond-Claims" },
+    { href: "/beyond-truth", label: "Beyond-Truth" },
+    { href: "/pricing", label: "Pricing" },
+    { href: "/contact", label: "Contact" },
+  ];
 
   return (
     <div style={styles.navWrap}>
       <div style={styles.container}>
         <div style={styles.nav}>
           <div style={styles.navLeft}>Beyond Health Systems</div>
+
+          <button
+            style={styles.menuButton}
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-label="Open menu"
+          >
+            Menu
+          </button>
+
           <div style={styles.navLinks}>
-            <a style={styles.a} href="/">Home</a>
-            <a style={styles.a} href="/platform">Platform</a>
-            <a style={styles.a} href="/beyond-claims">Beyond-Claims</a>
-            <a style={styles.a} href="/beyond-truth">Beyond-Truth</a>
-            <a style={styles.a} href="/pricing">Pricing</a>
-            <a style={styles.a} href="/contact">Contact</a>
+            {links.map((l) => (
+              <a key={l.href} style={styles.a} href={l.href}>
+                {l.label}
+              </a>
+            ))}
           </div>
+        </div>
+
+        <div style={styles.mobileMenu}>
+          {links.map((l) => (
+            <a
+              key={l.href}
+              style={styles.mobileLink}
+              href={l.href}
+              onClick={() => setMenuOpen(false)}
+            >
+              {l.label}
+            </a>
+          ))}
         </div>
       </div>
     </div>
