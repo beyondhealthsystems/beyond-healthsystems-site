@@ -246,20 +246,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section id="contact" style={styles.section}>
-        <div style={styles.container}>
-          <p style={styles.p}>
-            <b>steven@beyond-ai.com</b> | <b>847-791-7838</b>
-          </p>
-
-          <div style={styles.ctaRow}>
-            <a style={styles.buttonPrimary} href="mailto:steven@beyond-ai.com">
-              Request a 15-min walk-through
-            </a>
-          </div>
-        </div>
-      </section>
+     
 
       {/* FOOTER */}
       <footer style={styles.footer}>
