@@ -177,7 +177,7 @@ export default function Contact() {
           <div style={styles.ctaRow}>
             <a
               style={styles.buttonPrimary}
-              href="mailto:steven@beyond-claims.com?cc=tbrne@beyond-ai.com"
+              href="mailto:steven@beyond-claims.com?"
 
             >
               Request a 15-minute discussion
