@@ -27,7 +27,8 @@ export default function Download() {
           <p>Version 1.0</p>
 
           <a
-            href="https://github.com/beyondhealthsystems/beyond-healthsystems-site/releases/download/v1/Beyond-Truth-Installer.exe"
+            href="https://github.com/beyondhealthsystems/beyondhealthsystems/releases/download/v1/Beyond-Truth-Installer.exe"
+
 
             style={{
               display: "inline-block",
