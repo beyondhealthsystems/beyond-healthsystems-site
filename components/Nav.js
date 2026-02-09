@@ -86,6 +86,7 @@ export default function Nav() {
     { href: "/beyond-truth", label: "Beyond-Truth" },
     { href: "/pricing", label: "Pricing" },
     { href: "/contact", label: "Contact" },
+    {href: "/download", label: "Download" },
   ];
 
   return (
