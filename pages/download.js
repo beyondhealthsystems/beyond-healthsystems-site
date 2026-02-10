@@ -40,7 +40,7 @@ export default function Download() {
               fontWeight: "bold"
             }}
           >
-            Download Installer (68 MB)
+            Download Installer (105 MB)
           </a>
         </div>
 
