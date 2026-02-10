@@ -10,6 +10,31 @@ export default function Download() {
         padding: "60px 20px",
         fontFamily: "Arial, sans-serif"
       }}>
+
+        {/* ===== BETA HEADER ===== */}
+        <div style={{
+          textAlign: "center",
+          marginBottom: "40px"
+        }}>
+          <div style={{
+            fontSize: "42px",
+            fontWeight: "800",
+            letterSpacing: "2px",
+            color: "#1E3A8A"
+          }}>
+            BETA RELEASE v1.0
+          </div>
+
+          <div style={{
+            fontSize: "20px",
+            marginTop: "10px",
+            color: "#555",
+            fontWeight: "600"
+          }}>
+            Early Adopter Access
+          </div>
+        </div>
+
         <h1>Download Beyond-Truth</h1>
 
         <p style={{ fontSize: "18px", marginTop: "20px" }}>
@@ -24,11 +49,10 @@ export default function Download() {
           backgroundColor: "#f9fafb"
         }}>
           <h3>Windows Installer</h3>
-          <p>Version 1.0</p>
+          <p style={{ fontWeight: "bold" }}>Version 1.0 (Beta)</p>
 
           <a
             href="https://github.com/beyondhealthsystems/beyond-healthsystems-site/releases/latest/download/Beyond-Truth-Installer.exe"
-
             style={{
               display: "inline-block",
               marginTop: "20px",
@@ -37,7 +61,8 @@ export default function Download() {
               color: "#ffffff",
               textDecoration: "none",
               borderRadius: "6px",
-              fontWeight: "bold"
+              fontWeight: "bold",
+              fontSize: "16px"
             }}
           >
             Download Installer (105 MB)
@@ -47,11 +72,12 @@ export default function Download() {
         <div style={{ marginTop: "50px" }}>
           <h3>Early Adopter Program</h3>
           <p>
-            Risk-free pilot.  
-            Performance-based pricing.  
+            Risk-free pilot. <br />
+            Performance-based pricing. <br />
             6–8% recovery uplift typical in line-level short-pays.
           </p>
         </div>
+
       </div>
     </>
   );
