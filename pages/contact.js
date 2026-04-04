@@ -106,7 +106,7 @@ export default function Contact() {
               <span style={styles.label}>Email:</span>
               <a
                 style={styles.link}
-                href="mailto:steven@healthsystems.com"
+                href="mailto:steven@beyondhealthsystems.com"
               >
                 steven@healthsystems.com
               </a>
