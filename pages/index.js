@@ -148,28 +148,45 @@ export default function Home() {
 
   return (
     <main style={styles.page}>
-    <Nav />
+      <Nav />
 
-    
       {/* HERO */}
       <section style={styles.hero}>
         <div style={styles.container}>
-          <h1 style={styles.h1}>A Real Claims Recovery Solution — With Zero Financial Risk</h1>
+          <h1 style={styles.h1}>
+            Financial Truth. Recovery Intelligence. Care Intelligence.
+          </h1>
           <p style={styles.lead}>
-            The healthcare revenue cycle was built to post money — not to verify correctness. That assumption quietly costs hospitals millions every year.
+            One platform built to recover earned revenue and reveal what is
+            really happening across claims, care paths, providers, diagnoses,
+            procedures, medications, and patient journeys.
           </p>
           <p style={styles.sub}>
-            Beyond-Claims continuously audits paid and denied claims, corrects misadjudication at the service-line level, and recovers revenue previously left behind — with payment only when you actually collect.
+            Beyond-Truth continuously audits paid and denied claims, identifies
+            financial leakage at the service-line level, and makes recovery
+            economically viable. Beyond-Care turns that same underlying data
+            into care-path, provider, diagnosis, procedure, medication, and
+            patient intelligence leaders can actually use.
           </p>
 
-          {/* 1 — Boardroom leadership */}
           <p style={styles.p}>
-            <b>Why this matters at the leadership level:</b> Revenue that was previously assumed “gone” is now visible, measurable, and recoverable — changing financial conversations from conjecture to confidence.
+            <b>Why this matters at the leadership level:</b> Revenue once
+            assumed gone becomes visible, measurable, and recoverable. At the
+            same time, the same data begins revealing how care is actually
+            delivered across providers, diagnoses, procedures, medications, and
+            patient flow — changing leadership conversations from conjecture to
+            confidence.
           </p>
+
           <div style={styles.mediaCard}>
-            <img style={styles.img} src="/images/boardroom-revenue.png" alt="Boardroom leadership reviewing recovered revenue" />
+            <img
+              style={styles.img}
+              src="/images/boardroom-revenue.png"
+              alt="Boardroom leadership reviewing recovered revenue"
+            />
             <div style={styles.imgCaption}>
-              Board-level visibility into recovered revenue.
+              Board-level visibility into recovered revenue and operational
+              reality.
             </div>
           </div>
         </div>
@@ -180,41 +197,38 @@ export default function Home() {
         <div style={styles.container}>
           <h2 style={styles.sectionTitle}>The Platform</h2>
           <p style={styles.p}>
-            <b>See everything, miss nothing:</b> Traditional RCM reporting focuses on denials and collections totals. What’s missing is transaction correctness — whether dollars were actually paid in full.
+            <b>See the financial truth. See the care reality. Miss less. Control more.</b>{" "}
+            Traditional RCM reporting focuses on denials, collections totals,
+            and aging. Traditional healthcare analytics often sits in separate
+            systems and still misses the full path of what happened. What is
+            usually missing is transaction correctness, service-line precision,
+            and the ability to connect financial outcomes with care activity.
           </p>
           <p style={styles.p}>
-            The analytics dashboard surfaces issues hidden deep in adjudication logic so you can act on precise opportunities.
-          </p>
-          <div style={styles.mediaCard}>
-            <img style={styles.img} src="/images/audit-dashboard.jpg" alt="Audit analytics dashboard" />
-            <div style={styles.imgCaption}>
-              Audit analytics across paid, denied, and recovered claims.
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* BEYOND-CLAIMS */}
-      <section id="beyond-claims" style={styles.section}>
-        <div style={styles.container}>
-          <h2 style={styles.sectionTitle}>Beyond-Claims</h2>
-          <p style={styles.p}>
-            <b>Economics unlocked:</b> Manual recovery efforts fail because partial payments, contract nuances, and bundled edits drain resource economics. With deterministic processing, we make every line-item actionable and economically viable.
+            The platform surfaces issues hidden deep in adjudication logic and
+            connects them with the broader operational and patient picture so
+            leaders can act on precise opportunities, not assumptions.
           </p>
 
           <ul style={styles.bullets}>
-            <li>Audits paid and denied claims continuously</li>
-            <li>Finds recoverable dollars at the service-line level</li>
-            <li>Builds corrections that can be resubmitted and tracked</li>
-            <li>Designed to make small claims economically recoverable</li>
+            <li>Paid claims</li>
+            <li>Denied claims</li>
+            <li>Partial payments and underpayments</li>
+            <li>Diagnoses and procedures</li>
+            <li>Medication visibility</li>
+            <li>Provider patterns</li>
+            <li>Patient journeys</li>
+            <li>Financial outcomes</li>
           </ul>
 
-          <div style={{ marginTop: 16 }}>
-            <div style={styles.mediaCard}>
-              <img style={styles.img} src="/images/claims-engine.png" alt="Deterministic claims engine" />
-              <div style={styles.imgCaption}>
-                Deterministic recovery engine at service-line precision.
-              </div>
+          <div style={styles.mediaCard}>
+            <img
+              style={styles.img}
+              src="/images/audit-dashboard.jpg"
+              alt="Unified analytics dashboard"
+            />
+            <div style={styles.imgCaption}>
+              Unified analytics across revenue, recovery, and care intelligence.
             </div>
           </div>
         </div>
@@ -225,14 +239,95 @@ export default function Home() {
         <div style={styles.container}>
           <h2 style={styles.sectionTitle}>Beyond-Truth</h2>
           <p style={styles.p}>
-            <b>From recovered dollars to real-world impact:</b> When revenue is returned to the system, it becomes capacity — funding training, staffing, facility upgrades, and better care delivery without cutting services or raising patient costs.
+            <b>Deterministic recovery intelligence at service-line precision:</b>{" "}
+            Manual recovery efforts fail because small balances, partial
+            payments, contract nuances, bundled edits, and labor constraints
+            destroy the economics of going after what is already earned.
+            Beyond-Truth changes that by making relevant line items measurable,
+            reviewable, and actionable.
           </p>
-          <div style={styles.mediaCard}>
-            <img style={styles.img} src="/images/clinical-training.jpg" alt="Doctors in clinical training" />
-            <div style={styles.imgCaption}>
-              Doctors in training supported by recovered revenue.
+
+          <ul style={styles.bullets}>
+            <li>Continuously audits paid and denied claims</li>
+            <li>Identifies recoverable dollars at the service-line level</li>
+            <li>Flags underpayments, denials, and financial leakage</li>
+            <li>Supports corrected claim generation and recovery workflows</li>
+            <li>Makes smaller claims economically viable to pursue</li>
+            <li>Provides auditable financial truth, not assumptions</li>
+          </ul>
+
+          <div style={{ marginTop: 16 }}>
+            <div style={styles.mediaCard}>
+              <img
+                style={styles.img}
+                src="/images/claims-engine.png"
+                alt="Deterministic financial truth engine"
+              />
+              <div style={styles.imgCaption}>
+                Deterministic financial truth and recovery intelligence.
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* BEYOND-CARE */}
+      <section id="beyond-care" style={styles.section}>
+        <div style={styles.container}>
+          <h2 style={styles.sectionTitle}>Beyond-Care</h2>
+          <p style={styles.p}>
+            <b>Care-path and provider intelligence built from the same underlying data:</b>{" "}
+            Healthcare organizations already generate enormous amounts of useful
+            signal across claims, remits, diagnoses, procedures, medications,
+            and related records, but most of it stays disconnected.
+            Beyond-Care turns that history into a usable intelligence layer for
+            understanding how care is actually flowing across patients,
+            providers, and outcomes.
+          </p>
+
+          <ul style={styles.bullets}>
+            <li>Reveals real care-path sequencing</li>
+            <li>Surfaces provider patterns and variation</li>
+            <li>Connects diagnoses, procedures, and medication activity</li>
+            <li>Highlights patient fragmentation across services</li>
+            <li>Supports operational and financial care insight</li>
+            <li>Gives leadership a clearer view beyond reimbursement alone</li>
+          </ul>
+
+          <div style={styles.mediaCard}>
+            <img
+              style={styles.img}
+              src="/images/clinical-training.jpg"
+              alt="Care intelligence and clinical operations"
+            />
+            <div style={styles.imgCaption}>
+              Care intelligence built from real healthcare activity.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY IT MATTERS */}
+      <section style={styles.section}>
+        <div style={styles.container}>
+          <h2 style={styles.sectionTitle}>Why It Matters</h2>
+          <p style={styles.p}>
+            <b>Recovered revenue creates capacity. Better visibility supports better decisions.</b>{" "}
+            When earned revenue is recovered, it becomes real operational
+            capacity: staffing, training, facility support, and improved
+            execution without simply absorbing losses or pushing cost pressure
+            elsewhere.
+          </p>
+          <p style={styles.p}>
+            When care and provider intelligence become visible in the same
+            environment, leaders gain a clearer understanding of where care is
+            consistent, where it fragments, where costs rise, and where
+            intervention may matter most.
+          </p>
+          <p style={styles.p}>
+            That is the value of combining <b>Beyond-Truth</b> and{" "}
+            <b>Beyond-Care</b> in one platform.
+          </p>
         </div>
       </section>
 
@@ -241,17 +336,18 @@ export default function Home() {
         <div style={styles.container}>
           <h2 style={styles.sectionTitle}>Pricing</h2>
           <p style={styles.p}>
-            No setup fees. No minimums. No recovery — no cost. Beyond-Claims only participates when revenue is actually collected.
+            No setup fees. No minimums. No recovery — no cost. Beyond Health
+            Systems is designed to align with results, participating when
+            revenue is actually collected.
           </p>
         </div>
       </section>
 
-     
-
       {/* FOOTER */}
       <footer style={styles.footer}>
         <div style={styles.container}>
-          © {new Date().getFullYear()} Beyond Health Systems. All rights reserved.
+          © {new Date().getFullYear()} Beyond Health Systems. All rights
+          reserved.
         </div>
       </footer>
     </main>
