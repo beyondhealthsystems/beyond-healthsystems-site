@@ -82,11 +82,11 @@ export default function Nav() {
   const links = [
     { href: "/", label: "Home" },
     { href: "/platform", label: "Platform" },
-    { href: "/beyond-claims", label: "Beyond-Claims" },
     { href: "/beyond-truth", label: "Beyond-Truth" },
+    { href: "/beyond-care", label: "Beyond-Care" },
     { href: "/pricing", label: "Pricing" },
     { href: "/contact", label: "Contact" },
-    {href: "/download", label: "Download" },
+    { href: "/download", label: "Download" },
   ];
 
   return (
