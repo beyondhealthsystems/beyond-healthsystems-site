@@ -2,7 +2,6 @@
 
 import Nav from "../components/Nav";
 
-
 export default function BeyondTruth() {
   const styles = {
     page: {
@@ -47,7 +46,6 @@ export default function BeyondTruth() {
       fontWeight: 600,
     },
 
-    /* HERO with background */
     hero: {
       padding: "84px 0 46px",
       backgroundImage: "url('/images/hero-background-light.png')",
@@ -116,25 +114,27 @@ export default function BeyondTruth() {
 
   return (
     <main style={styles.page}>
-        <Nav />
+      <Nav />
 
-     
       {/* HERO */}
       <section style={styles.hero}>
         <div style={styles.container}>
           <h1 style={styles.h1}>Beyond-Truth</h1>
 
           <p style={styles.lead}>
-            Beyond-Truth is the audit-first proof layer of the Beyond platform —
-            designed to quantify recovery opportunity before workflows change
-            and before decisions are made.
+            Beyond-Truth is the deterministic financial intelligence and recovery
+            engine of the platform — built to identify what was underpaid,
+            denied, missed, or written off too early, and to make those dollars
+            visible, auditable, and actionable.
           </p>
 
           <p style={styles.lead}>
-            It answers one critical question with precision:
+            It answers the question leadership should have been able to answer
+            years ago:
             <br />
             <strong>
-              What revenue are we actually leaving behind — and why?
+              What revenue was truly earned, what happened to it, and what can
+              still be recovered?
             </strong>
           </p>
 
@@ -142,11 +142,10 @@ export default function BeyondTruth() {
             <img
               style={styles.img}
               src="/images/audit-dashboard.jpg"
-              alt="Audit analytics showing paid, denied, and recoverable revenue"
+              alt="Audit analytics showing paid, denied, underpaid, and recoverable revenue"
             />
             <div style={styles.caption}>
-              Executive audit visibility across paid, denied, and recoverable
-              claims.
+              Financial truth across paid, denied, underpaid, and recoverable claims.
             </div>
           </div>
         </div>
@@ -158,34 +157,52 @@ export default function BeyondTruth() {
           <h2 style={styles.h2}>What Beyond-Truth Is</h2>
 
           <p style={styles.p}>
-            Beyond-Truth provides a deterministic audit of historical claims data,
-            revealing recovery opportunities that do not surface in standard RCM
-            reporting or dashboards.
+            Beyond-Truth is not generic reporting and not black-box AI. It is a
+            deterministic, auditable financial truth layer that evaluates claims
+            and remittance history at service-line precision.
           </p>
 
           <p style={styles.p}>
-            It does not require operational change, resubmission activity, or
-            system replacement. It exists to establish factual baseline truth.
+            It is designed to expose denials, underpayments, partial payments,
+            and transaction-level leakage that standard reporting often misses
+            or treats as uneconomical to pursue.
           </p>
+        </div>
+      </section>
+
+      {/* WHAT IT DOES */}
+      <section style={styles.section}>
+        <div style={styles.container}>
+          <h2 style={styles.h2}>What Beyond-Truth Does</h2>
+
+          <ul style={styles.bullets}>
+            <li>Audits paid and denied claims at the service-line level</li>
+            <li>Identifies underpayments, denials, and financial leakage</li>
+            <li>Distinguishes true recoverable dollars from noise</li>
+            <li>Supports corrected claim generation and appeal workflows</li>
+            <li>Makes smaller claims economically viable to pursue</li>
+            <li>Provides leadership with auditable, explainable outcomes</li>
+          </ul>
         </div>
       </section>
 
       {/* WHAT IT EXPOSES */}
       <section style={styles.section}>
         <div style={styles.container}>
-          <h2 style={styles.h2}>What the Audit Exposes</h2>
+          <h2 style={styles.h2}>What It Exposes</h2>
 
           <ul style={styles.bullets}>
-            <li>Silent underpayments within “paid” claims</li>
+            <li>Silent underpayments hidden inside paid claims</li>
             <li>Service-line discrepancies masked by aggregate posting</li>
             <li>Payer-specific enforcement inconsistencies</li>
-            <li>Contract drift over time</li>
-            <li>Claims never revisited due to economic constraints</li>
+            <li>Modifier, bundling, and adjudication-related leakage</li>
+            <li>Claims written off because labor economics failed</li>
+            <li>Recovery opportunity that traditional workflows never reached</li>
           </ul>
 
           <p style={styles.p}>
-            These findings are grounded in adjudication outcomes — not estimates,
-            projections, or sampling.
+            These findings are grounded in actual transaction outcomes and
+            deterministic evaluation logic, not estimates or optimistic guesses.
           </p>
         </div>
       </section>
@@ -193,30 +210,34 @@ export default function BeyondTruth() {
       {/* WHY IT MATTERS */}
       <section style={styles.section}>
         <div style={styles.container}>
-          <h2 style={styles.h2}>Why This Layer Matters</h2>
+          <h2 style={styles.h2}>Why It Matters</h2>
 
           <p style={styles.p}>
-            Without an audit-first view, organizations debate recovery strategy
-            without knowing the true size or nature of the opportunity.
+            Most healthcare organizations know denials matter, but they still
+            lack a clean way to see the broader truth across denied, partially
+            paid, and silently underpaid claims. That leaves leadership making
+            decisions without a complete picture of what was really lost.
           </p>
 
           <p style={styles.p}>
-            Beyond-Truth removes speculation, enabling leaders to evaluate
-            recovery decisions using evidence rather than assumptions.
+            Beyond-Truth replaces conjecture with auditable financial reality,
+            so recovery strategy can be based on evidence, not assumptions.
           </p>
         </div>
       </section>
 
-      {/* OUTPUT */}
+      {/* WHAT LEADERS RECEIVE */}
       <section style={styles.section}>
         <div style={styles.container}>
           <h2 style={styles.h2}>What Leaders Receive</h2>
 
           <ul style={styles.bullets}>
             <li>Quantified recovery opportunity by payer and service line</li>
-            <li>Clear differentiation between denied and paid claim leakage</li>
+            <li>Visibility into denied, underpaid, and partially paid claims</li>
+            <li>Corrected claim and appeal workflow support</li>
             <li>Audit-ready documentation suitable for governance review</li>
-            <li>A factual foundation for recovery prioritization</li>
+            <li>Executive-level transparency into financial leakage</li>
+            <li>A factual basis for recovery prioritization and action</li>
           </ul>
         </div>
       </section>
