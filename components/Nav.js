@@ -87,6 +87,10 @@ export default function Nav() {
     { href: "/pricing", label: "Pricing" },
     { href: "/contact", label: "Contact" },
     { href: "/download", label: "Download" },
+    {
+      href: "https://youtube.com/playlist?list=PLc8KAuODXjiBQqmWYLi8YFhUK_phAWu0v&si=UhvLAhn4Tgbse0l7",
+      label: "Videos",
+    },
   ];
 
   return (
@@ -98,7 +102,13 @@ export default function Nav() {
           {!isMobile && (
             <div style={styles.navLinks}>
               {links.map((l) => (
-                <a key={l.href} style={styles.a} href={l.href}>
+                <a
+                  key={l.href}
+                  style={styles.a}
+                  href={l.href}
+                  target={l.href.startsWith("http") ? "_blank" : "_self"}
+                  rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                >
                   {l.label}
                 </a>
               ))}
@@ -123,6 +133,8 @@ export default function Nav() {
                 key={l.href}
                 style={styles.mobileLink}
                 href={l.href}
+                target={l.href.startsWith("http") ? "_blank" : "_self"}
+                rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
                 onClick={() => setMenuOpen(false)}
               >
                 {l.label}
